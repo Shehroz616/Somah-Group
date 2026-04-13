@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'playfair': ['Playfair Display', 'serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-inter bg-white text-gray-900">
+
+    <header id="header" class="border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <div class="font-playfair text-2xl font-semibold tracking-tight">SOMAH GROUP</div>
+                </div>
+                <nav class="hidden lg:flex items-center space-x-10">
+                    <a href="/" class="text-sm font-medium text-gray-900 border-b-2 border-gray-900 pb-1">Home</a>
+                    <a href="capability.html"
+                        class="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors">Capabilities</a>
+                    <a href="services.html"
+                        class="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors">Services</a>
+                    <a href="about-us.html"
+                        class="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors">About Us</a>
+                    <a href="contact.html"
+                        class="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors">Contact</a>
+                </nav>
+                <button class="lg:hidden text-gray-900">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="h-[700px] flex items-center border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12 w-full">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
+                    <div class="lg:col-span-7">
+                        <h1
+                            class="font-playfair text-5xl md:text-6xl lg:text-7xl font-medium leading-tight text-gray-900 mb-6">
+                            Institutional Capital Markets Solutions
+                        </h1>
+                        <div class="w-16 h-px bg-gray-900 mb-8"></div>
+                        <p class="font-inter text-lg md:text-xl text-gray-600 leading-relaxed mb-10 max-w-2xl">
+                            Somah Group delivers sophisticated foreign exchange, credit solutions, and cross-border
+                            liquidity services to institutional clients worldwide.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="#capabilities"
+                                class="inline-flex items-center justify-center px-8 py-4 bg-gray-900 text-white text-sm font-medium tracking-wide hover:bg-gray-800 transition-colors">
+                                EXPLORE CAPABILITIES
+                            </a>
+                            <a href="#contact"
+                                class="inline-flex items-center justify-center px-8 py-4 border border-gray-900 text-gray-900 text-sm font-medium tracking-wide hover:bg-gray-50 transition-colors">
+                                CONTACT US
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 flex items-center justify-end">
+                        <div class="grid grid-cols-2 gap-8 w-full max-w-md">
+                            <div class="text-center lg:text-left">
+                                <div class="font-playfair text-5xl font-semibold text-gray-900 mb-2">$45B+</div>
+                                <div class="text-sm text-gray-600 font-inter">Annual Volume</div>
+                            </div>
+                            <div class="text-center lg:text-left">
+                                <div class="font-playfair text-5xl font-semibold text-gray-900 mb-2">180+</div>
+                                <div class="text-sm text-gray-600 font-inter">Global Markets</div>
+                            </div>
+                            <div class="text-center lg:text-left">
+                                <div class="font-playfair text-5xl font-semibold text-gray-900 mb-2">24/7</div>
+                                <div class="text-sm text-gray-600 font-inter">Trading Desk</div>
+                            </div>
+                            <div class="text-center lg:text-left">
+                                <div class="font-playfair text-5xl font-semibold text-gray-900 mb-2">AAA</div>
+                                <div class="text-sm text-gray-600 font-inter">Credit Rating</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Capabilities (Detailed List) -->
+        <section class="py-24 bg-surface-container-highest/30 bg-gray-900 text-white">
+            <div class="max-w-screen-2xl mx-auto px-12">
+                <div class="flex flex-col md:flex-row justify-between items-baseline mb-16 gap-8">
+                    <h2 class="text-5xl">Core Capabilities</h2>
+                    <div class="h-px bg-outline-variant/20 flex-grow mx-8 hidden md:block"></div>
+                    <a class="font-label text-xs uppercase tracking-widest text-primary hover:underline" href="capability.html">View More</a>
+                </div>
+                <div class="space-y-0 border-t border-outline-variant/20">
+                    <div
+                        class="group py-16 grid grid-cols-1 md:grid-cols-12 gap-8 border-b border-outline-variant/20 hover:bg-surface-container-low transition-colors duration-500">
+                        <div class="md:col-span-1 text-on-surface/30 font-serif text-2xl italic">01</div>
+                        <div class="md:col-span-5">
+                            <h3 class="text-3xl group-hover:translate-x-2 transition-transform duration-500">Corporate
+                                FX &amp; Advanced Structured Hedging</h3>
+                        </div>
+                        <div class="md:col-span-6">
+                            <p class="text-secondary leading-relaxed">Comprehensive currency risk management strategies
+                                utilizing spot, forwards, and complex options structures to protect margins across
+                                global operations.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="group py-16 grid grid-cols-1 md:grid-cols-12 gap-8 border-b border-outline-variant/20 hover:bg-surface-container-low transition-colors duration-500">
+                        <div class="md:col-span-1 text-on-surface/30 font-serif text-2xl italic">02</div>
+                        <div class="md:col-span-5">
+                            <h3 class="text-3xl group-hover:translate-x-2 transition-transform duration-500">Commercial
+                                &amp; Trade Finance</h3>
+                        </div>
+                        <div class="md:col-span-6">
+                            <p class="text-secondary leading-relaxed">Optimizing working capital through receivables
+                                financing, supply chain finance, and tailored credit facilities for mid-market and
+                                institutional entities.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="group py-16 grid grid-cols-1 md:grid-cols-12 gap-8 border-b border-outline-variant/20 hover:bg-surface-container-low transition-colors duration-500">
+                        <div class="md:col-span-1 text-on-surface/30 font-serif text-2xl italic">03</div>
+                        <div class="md:col-span-5">
+                            <h3 class="text-3xl group-hover:translate-x-2 transition-transform duration-500">Emerging
+                                Markets Cross-Border Liquidity</h3>
+                        </div>
+                        <div class="md:col-span-6">
+                            <p class="text-secondary leading-relaxed">Facilitating large-ticket transfers and liquidity
+                                sourcing in restrictive or illiquid jurisdictions with high emphasis on compliance and
+                                settlement certainty.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="capabilities" class="py-24 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-4xl md:text-5xl font-medium text-gray-900 mb-4">Core Capabilities</h2>
+                <div class="w-16 h-px bg-gray-900 mx-auto mb-6"></div>
+                <p class="font-inter text-lg text-gray-600 max-w-2xl mx-auto">
+                    Delivering institutional-grade financial solutions across global markets with precision and expertise.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-gray-200">
+                <div id="capability-fx" class="bg-white p-10 hover:bg-gray-50 transition-colors group">
+                    <div class="w-12 h-12 bg-gray-900 flex items-center justify-center mb-6 group-hover:bg-gray-800 transition-colors">
+                        <i class="fas fa-exchange-alt text-white text-xl"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-medium text-gray-900 mb-4">Foreign Exchange</h3>
+                    <p class="font-inter text-gray-600 leading-relaxed mb-6">
+                        Comprehensive FX solutions including spot, forwards, swaps, and options across major and emerging market currencies.
+                    </p>
+                    <a href="#" class="inline-flex items-center text-sm font-medium text-gray-900 group-hover:underline">
+                        LEARN MORE <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+                <div id="capability-credit" class="bg-white p-10 hover:bg-gray-50 transition-colors group">
+                    <div class="w-12 h-12 bg-gray-900 flex items-center justify-center mb-6 group-hover:bg-gray-800 transition-colors">
+                        <i class="fas fa-chart-line text-white text-xl"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-medium text-gray-900 mb-4">Credit Solutions</h3>
+                    <p class="font-inter text-gray-600 leading-relaxed mb-6">
+                        Structured credit products, trade finance, and risk management solutions tailored to institutional requirements.
+                    </p>
+                    <a href="#" class="inline-flex items-center text-sm font-medium text-gray-900 group-hover:underline">
+                        LEARN MORE <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+                <div id="capability-liquidity" class="bg-white p-10 hover:bg-gray-50 transition-colors group">
+                    <div class="w-12 h-12 bg-gray-900 flex items-center justify-center mb-6 group-hover:bg-gray-800 transition-colors">
+                        <i class="fas fa-globe text-white text-xl"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-medium text-gray-900 mb-4">Cross-Border Liquidity</h3>
+                    <p class="font-inter text-gray-600 leading-relaxed mb-6">
+                        Seamless cross-border payment infrastructure and liquidity management for global operations and settlements.
+                    </p>
+                    <a href="#" class="inline-flex items-center text-sm font-medium text-gray-900 group-hover:underline">
+                        LEARN MORE <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+        <section id="institutional-focus" class="py-24 border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="font-playfair text-4xl md:text-5xl font-medium text-gray-900 mb-6">
+                            Built for Institutional Excellence
+                        </h2>
+                        <div class="w-16 h-px bg-gray-900 mb-8"></div>
+                        <p class="font-inter text-lg text-gray-600 leading-relaxed mb-8">
+                            Our platform is engineered to meet the exacting standards of institutional investors,
+                            corporations, and financial institutions operating in global markets.
+                        </p>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div
+                                    class="w-6 h-6 bg-gray-900 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-inter font-medium text-gray-900 mb-1">Regulatory Compliance</h4>
+                                    <p class="text-gray-600 text-sm">Full adherence to global regulatory frameworks and
+                                        reporting standards.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div
+                                    class="w-6 h-6 bg-gray-900 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-inter font-medium text-gray-900 mb-1">Enterprise-Grade Security</h4>
+                                    <p class="text-gray-600 text-sm">Bank-level encryption and multi-layered security
+                                        protocols.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div
+                                    class="w-6 h-6 bg-gray-900 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-inter font-medium text-gray-900 mb-1">Dedicated Relationship
+                                        Management</h4>
+                                    <p class="text-gray-600 text-sm">Senior coverage teams with deep market expertise
+                                        and local knowledge.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="bg-white p-8 border border-gray-200">
+                            <div class="font-playfair text-3xl font-semibold text-gray-900 mb-2">98.7%</div>
+                            <div class="text-sm text-gray-600 font-inter">System Uptime</div>
+                        </div>
+                        <div class="bg-white p-8 border border-gray-200">
+                            <div class="font-playfair text-3xl font-semibold text-gray-900 mb-2">&lt;50ms</div>
+                            <div class="text-sm text-gray-600 font-inter">Execution Speed</div>
+                        </div>
+                        <div class="bg-white p-8 border border-gray-200">
+                            <div class="font-playfair text-3xl font-semibold text-gray-900 mb-2">150+</div>
+                            <div class="text-sm text-gray-600 font-inter">Currency Pairs</div>
+                        </div>
+                        <div class="bg-white p-8 border border-gray-200">
+                            <div class="font-playfair text-3xl font-semibold text-gray-900 mb-2">ISO 27001</div>
+                            <div class="text-sm text-gray-600 font-inter">Certified</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="trust-signals" class="py-24 border-b border-gray-200 bg-gray-900 text-white">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+                <div class="text-center mb-16">
+                    <h2 class="font-playfair text-4xl md:text-5xl font-medium mb-4">Trusted by Leading
+                        Institutions</h2>
+                    <div class="w-16 h-px bg-gray-900 mx-auto"></div>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-60">
+                    <div class="flex items-center justify-center h-20">
+                        <div class="font-playfair text-2xl font-semibold text-gray-400">GLOBAL BANK</div>
+                    </div>
+                    <div class="flex items-center justify-center h-20">
+                        <div class="font-playfair text-2xl font-semibold text-gray-400">ASSET MGMT</div>
+                    </div>
+                    <div class="flex items-center justify-center h-20">
+                        <div class="font-playfair text-2xl font-semibold text-gray-400">HEDGE FUND</div>
+                    </div>
+                    <div class="flex items-center justify-center h-20">
+                        <div class="font-playfair text-2xl font-semibold text-gray-400">CORPORATE</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta-section" class="py-24">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+                <div class="bg-gray-900 px-12 py-20 text-center">
+                    <h2 class="font-playfair text-4xl md:text-5xl font-medium text-white mb-6">
+                        Ready to Elevate Your Capital Markets Strategy?
+                    </h2>
+                    <div class="w-16 h-px bg-white mx-auto mb-8"></div>
+                    <p class="font-inter text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
+                        Connect with our institutional team to discuss tailored solutions for your organization.
+                    </p>
+                    <a href="#"
+                        class="inline-flex items-center justify-center px-10 py-4 bg-white text-gray-900 text-sm font-medium tracking-wide hover:bg-gray-100 transition-colors">
+                        SCHEDULE A CONSULTATION
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="border-t border-gray-200 py-12 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-1">
+                    <div class="font-playfair text-2xl font-semibold tracking-tight mb-4">SOMAH GROUP</div>
+                    <p class="text-sm text-gray-600 font-inter">
+                        Institutional capital markets solutions for a connected world.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-inter font-semibold text-gray-900 text-sm mb-4 tracking-wide">SERVICES</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-sm text-gray-600 hover:text-white transition-colors">Foreign
+                                Exchange</a></li>
+                        <li><a href="#" class="text-sm text-gray-600 hover:text-white transition-colors">Credit
+                                Solutions</a></li>
+                        <li><a href="#" class="text-sm text-gray-600 hover:text-white transition-colors">Cross-Border
+                                Liquidity</a></li>
+                        <li><a href="#" class="text-sm text-gray-600 hover:text-white transition-colors">Risk
+                                Management</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-inter font-semibold text-gray-900 text-sm mb-4 tracking-wide">COMPANY</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-sm text-gray-600 hover:text-white transition-colors">About Us</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-sm text-gray-600 hover:text-white transition-colors">Leadership</a></li>
+                        <li><a href="#" class="text-sm text-gray-600 hover:text-white transition-colors">Careers</a>
+                        </li>
+                        <li><a href="#" class="text-sm text-gray-600 hover:text-white transition-colors">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-inter font-semibold text-gray-900 text-sm mb-4 tracking-wide">LEGAL</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-sm text-gray-600 hover:text-white transition-colors">Privacy
+                                Policy</a></li>
+                        <li><a href="#" class="text-sm text-gray-600 hover:text-white transition-colors">Terms of
+                                Service</a></li>
+                        <li><a href="#"
+                                class="text-sm text-gray-600 hover:text-white transition-colors">Compliance</a></li>
+                        <li><a href="#"
+                                class="text-sm text-gray-600 hover:text-white transition-colors">Disclosures</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-gray-600 font-inter mb-4 md:mb-0">© 2024 Somah Group. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-white transition-colors"><i
+                            class="fab fa-linkedin text-lg"></i></a>
+                    <a href="#" class="text-gray-600 hover:text-white transition-colors"><i
+                            class="fab fa-twitter text-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
