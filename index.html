@@ -17,6 +17,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
     <style>
         ::-webkit-scrollbar {
             display: none;
@@ -119,14 +121,15 @@
                 <div class="flex flex-col md:flex-row justify-between items-baseline mb-16 gap-8">
                     <h2 class="text-5xl">Core Capabilities</h2>
                     <div class="h-px bg-outline-variant/20 flex-grow mx-8 hidden md:block"></div>
-                    <a class="font-label text-xs uppercase tracking-widest text-primary hover:underline" href="capability.html">View More</a>
+                    <a class="font-label text-xs uppercase tracking-widest text-primary hover:underline"
+                        href="capability.html">View More</a>
                 </div>
                 <div class="space-y-0 border-t border-outline-variant/20">
                     <div
                         class="group py-16 grid grid-cols-1 md:grid-cols-12 gap-8 border-b border-outline-variant/20 hover:bg-surface-container-low transition-colors duration-500">
                         <div class="md:col-span-1 text-on-surface/30 font-serif text-2xl italic">01</div>
                         <div class="md:col-span-5">
-                            <h3 class="text-3xl group-hover:translate-x-2 transition-transform duration-500">Corporate
+                            <h3 data-img-id="float-1" class="text-3xl group-hover:translate-x-2 transition-transform duration-500 cap-heading">Corporate
                                 FX &amp; Advanced Structured Hedging</h3>
                         </div>
                         <div class="md:col-span-6">
@@ -139,7 +142,7 @@
                         class="group py-16 grid grid-cols-1 md:grid-cols-12 gap-8 border-b border-outline-variant/20 hover:bg-surface-container-low transition-colors duration-500">
                         <div class="md:col-span-1 text-on-surface/30 font-serif text-2xl italic">02</div>
                         <div class="md:col-span-5">
-                            <h3 class="text-3xl group-hover:translate-x-2 transition-transform duration-500">Commercial
+                            <h3 data-img-id="float-2" class="text-3xl group-hover:translate-x-2 transition-transform duration-500 cap-heading">Commercial
                                 &amp; Trade Finance</h3>
                         </div>
                         <div class="md:col-span-6">
@@ -152,7 +155,7 @@
                         class="group py-16 grid grid-cols-1 md:grid-cols-12 gap-8 border-b border-outline-variant/20 hover:bg-surface-container-low transition-colors duration-500">
                         <div class="md:col-span-1 text-on-surface/30 font-serif text-2xl italic">03</div>
                         <div class="md:col-span-5">
-                            <h3 class="text-3xl group-hover:translate-x-2 transition-transform duration-500">Emerging
+                            <h3 data-img-id="float-3" class="text-3xl group-hover:translate-x-2 transition-transform duration-500 cap-heading">Emerging
                                 Markets Cross-Border Liquidity</h3>
                         </div>
                         <div class="md:col-span-6">
@@ -229,8 +232,7 @@
                         </p>
                         <div class="space-y-6">
                             <div class="flex items-start">
-                                <div
-                                    class="w-6 h-6 bg-black flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                                <div class="w-6 h-6 bg-black flex items-center justify-center mr-4 mt-1 flex-shrink-0">
                                     <i class="fas fa-check text-white text-xs"></i>
                                 </div>
                                 <div>
@@ -240,8 +242,7 @@
                                 </div>
                             </div>
                             <div class="flex items-start">
-                                <div
-                                    class="w-6 h-6 bg-black flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                                <div class="w-6 h-6 bg-black flex items-center justify-center mr-4 mt-1 flex-shrink-0">
                                     <i class="fas fa-check text-white text-xs"></i>
                                 </div>
                                 <div>
@@ -251,8 +252,7 @@
                                 </div>
                             </div>
                             <div class="flex items-start">
-                                <div
-                                    class="w-6 h-6 bg-black flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                                <div class="w-6 h-6 bg-black flex items-center justify-center mr-4 mt-1 flex-shrink-0">
                                     <i class="fas fa-check text-white text-xs"></i>
                                 </div>
                                 <div>
@@ -356,8 +356,8 @@
                     <ul class="space-y-3">
                         <li><a href="#" class="text-sm text-gray-600 hover:text-white transition-colors">About Us</a>
                         </li>
-                        <li><a href="#"
-                                class="text-sm text-gray-600 hover:text-white transition-colors">Leadership</a></li>
+                        <li><a href="#" class="text-sm text-gray-600 hover:text-white transition-colors">Leadership</a>
+                        </li>
                         <li><a href="#" class="text-sm text-gray-600 hover:text-white transition-colors">Careers</a>
                         </li>
                         <li><a href="#" class="text-sm text-gray-600 hover:text-white transition-colors">Contact</a>
@@ -371,10 +371,10 @@
                                 Policy</a></li>
                         <li><a href="#" class="text-sm text-gray-600 hover:text-white transition-colors">Terms of
                                 Service</a></li>
-                        <li><a href="#"
-                                class="text-sm text-gray-600 hover:text-white transition-colors">Compliance</a></li>
-                        <li><a href="#"
-                                class="text-sm text-gray-600 hover:text-white transition-colors">Disclosures</a></li>
+                        <li><a href="#" class="text-sm text-gray-600 hover:text-white transition-colors">Compliance</a>
+                        </li>
+                        <li><a href="#" class="text-sm text-gray-600 hover:text-white transition-colors">Disclosures</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -390,6 +390,63 @@
         </div>
     </footer>
 
+
+    <div id="float-1" class="img-float">
+        <img src="assets/img/jakub-zerdzicki--nJ9k6iU6_g-unsplash.jpg" alt="..." />
+    </div>
+    <div id="float-2" class="img-float">
+        <img src="assets/img/hero-image.png" alt="..." />
+    </div>
+    <div id="float-3" class="img-float">
+        <img src="assets/img/jakub-zerdzicki--nJ9k6iU6_g-unsplash.jpg" alt="..." />
+    </div>
+
+    <script>
+        const headings = document.querySelectorAll('.cap-heading');
+let activeFloat = null;
+let mouseX = 0, mouseY = 0;
+let curX = 0, curY = 0;
+let rafId = null;
+
+function lerp(a, b, t) { return a + (b - a) * t; }
+
+function animate() {
+  curX = lerp(curX, mouseX, 0.1);
+  curY = lerp(curY, mouseY, 0.1);
+  if (activeFloat) {
+    activeFloat.style.left = (curX + 24) + 'px';
+    activeFloat.style.top = (curY - 60) + 'px';
+  }
+  rafId = requestAnimationFrame(animate);
+}
+
+document.addEventListener('mousemove', (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+});
+
+headings.forEach(h => {
+  const floatEl = document.getElementById(h.dataset.imgId);
+
+  h.addEventListener('mouseenter', () => {
+    if (activeFloat && activeFloat !== floatEl) {
+      activeFloat.classList.remove('visible');
+    }
+    curX = mouseX;
+    curY = mouseY;
+    activeFloat = floatEl;
+    floatEl.style.left = (mouseX + 24) + 'px';
+    floatEl.style.top = (mouseY - 60) + 'px';
+    floatEl.classList.add('visible');
+    if (!rafId) rafId = requestAnimationFrame(animate);
+  });
+
+  h.addEventListener('mouseleave', () => {
+    floatEl.classList.remove('visible');
+    activeFloat = null;
+  });
+});
+    </script>
 </body>
 
 </html>
