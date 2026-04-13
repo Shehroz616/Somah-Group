@@ -438,7 +438,10 @@
         headings.forEach(h => {
             const floatEl = document.getElementById(h.dataset.imgId);
 
-            h.addEventListener('mouseenter', () => {
+            const isMdUp = () => window.matchMedia('(min-width: 768px)').matches;
+
+            function onEnter() {
+                if (!isMdUp()) return; // only active on md+ (Tailwind md = 768px)
                 if (activeFloat && activeFloat !== floatEl) {
                     activeFloat.classList.remove('visible');
                 }
@@ -449,6 +452,22 @@
                 floatEl.style.top = (mouseY - 60) + 'px';
                 floatEl.classList.add('visible');
                 if (!rafId) rafId = requestAnimationFrame(animate);
+            }
+
+            h.addEventListener('mouseenter', onEnter);
+
+            // Ensure floats are hidden and animation stopped if viewport shrinks below md
+            window.addEventListener('resize', () => {
+                if (!isMdUp()) {
+                    if (activeFloat) {
+                        activeFloat.classList.remove('visible');
+                        activeFloat = null;
+                    }
+                    if (rafId) {
+                        cancelAnimationFrame(rafId);
+                        rafId = null;
+                    }
+                }
             });
 
             h.addEventListener('mouseleave', () => {
