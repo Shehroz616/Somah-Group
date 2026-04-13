@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service Detail — Institutional FX</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <style>::-webkit-scrollbar { display: none;}</style>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
     <script>
         tailwind.config = {
             theme: {
@@ -25,349 +38,397 @@
         }
     </script>
 </head>
+
 <body class="font-inter bg-white text-gray-900">
 
-<header id="header" class="border-b border-gray-200">
-    <div class="max-w-7xl mx-auto px-6 lg:px-12">
-        <div class="flex items-center justify-between h-20">
-            <div class="flex items-center"> 
-                <div class="font-playfair text-2xl font-semibold tracking-tight">SOMAH GROUP</div>
-            </div>
-            <nav class="hidden lg:flex items-center space-x-10">
-                <a href="/" class="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors">Home</a>
-                <a href="capability.html" class="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors">Capabilities</a>
-                <a href="services.html" class="text-sm font-medium text-gray-900 border-b-2 border-gray-900 pb-1">Services</a>
-                <a href="about-us.html" class="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors">About Us</a>
-                <a href="contact.html" class="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors">Contact</a>
-            </nav>
-            <button class="lg:hidden text-gray-900">
-                <i class="fas fa-bars text-xl"></i>
-            </button>
-        </div>
-    </div>
-</header>
-
-<main>
-    <section id="service-overview" class="py-16 border-b border-gray-200">
+    <header id="header" class="border-b border-gray-200">
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            <div class="max-w-4xl">
-                <div class="mb-6">
-                    <span class="text-sm font-medium text-gray-500 tracking-wide">INSTITUTIONAL SERVICES</span>
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <div class="font-playfair text-2xl font-semibold tracking-tight"><img src="assets/img/logo.svg"
+                            class="w-24" alt=""></div>
                 </div>
-                <h1 class="font-playfair text-5xl md:text-6xl font-medium text-gray-900 mb-6">
-                    Foreign Exchange
-                </h1>
-                <div class="w-16 h-px bg-gray-900 mb-8"></div>
-                <p class="font-inter text-xl text-gray-600 leading-relaxed mb-8">
-                    Comprehensive institutional FX solutions providing deep liquidity access, sophisticated execution capabilities, and risk management across 150+ currency pairs with 24/7 global coverage.
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                    <div class="border-r border-gray-200 pr-8">
-                        <div class="text-3xl font-playfair font-medium text-gray-900 mb-2">$2.5T+</div>
-                        <div class="text-sm text-gray-600">Daily FX Volume</div>
-                    </div>
-                    <div class="border-r border-gray-200 pr-8">
-                        <div class="text-3xl font-playfair font-medium text-gray-900 mb-2">150+</div>
-                        <div class="text-sm text-gray-600">Currency Pairs</div>
-                    </div>
-                    <div>
-                        <div class="text-3xl font-playfair font-medium text-gray-900 mb-2">24/7</div>
-                        <div class="text-sm text-gray-600">Global Coverage</div>
-                    </div>
-                </div>
+                <nav class="hidden lg:flex items-center space-x-10">
+                    <a href="/" class="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors">Home</a>
+                    <a href="capability.html"
+                        class="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors">Capabilities</a>
+                    <a href="services.html"
+                        class="text-sm font-medium text-gray-900 border-b-2 border-gray-900 pb-1">Services</a>
+                    <a href="about-us.html"
+                        class="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors">About Us</a>
+                    <a href="contact.html"
+                        class="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors">Contact</a>
+                </nav>
+                <button class="lg:hidden text-gray-900">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
             </div>
         </div>
-    </section>
+    </header>
 
-    <section id="key-offerings" class="py-20 border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            <div class="mb-16">
-                <h2 class="font-playfair text-4xl font-medium text-gray-900 mb-4">Key Offerings</h2>
-                <div class="w-16 h-px bg-gray-900"></div>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-gray-200">
-                <div id="spot-transactions" class="bg-white p-8">
-                    <div class="w-10 h-10 bg-gray-900 flex items-center justify-center mb-6">
-                        <i class="fas fa-bolt text-white"></i>
+    <main>
+        <section id="service-overview" class="py-16 border-b border-gray-200 bg-black">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+                <div class="max-w-4xl">
+                    <div class="mb-6">
+                        <span class="text-sm font-medium text-gray-200 tracking-wide">INSTITUTIONAL SERVICES</span>
                     </div>
-                    <h3 class="font-playfair text-xl font-medium text-gray-900 mb-4">Spot Transactions</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">
-                        Immediate settlement FX transactions with institutional-grade pricing and execution across major and emerging market currencies.
-                    </p>
-                </div>
-
-                <div id="forwards-swaps" class="bg-white p-8">
-                    <div class="w-10 h-10 bg-gray-900 flex items-center justify-center mb-6">
-                        <i class="fas fa-calendar-alt text-white"></i>
-                    </div>
-                    <h3 class="font-playfair text-xl font-medium text-gray-900 mb-4">Forwards & Swaps</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">
-                        Forward contracts and FX swaps for hedging currency exposure and managing cash flow timing across multiple settlement dates.
-                    </p>
-                </div>
-
-                <div id="fx-options" class="bg-white p-8">
-                    <div class="w-10 h-10 bg-gray-900 flex items-center justify-center mb-6">
-                        <i class="fas fa-chart-line text-white"></i>
-                    </div>
-                    <h3 class="font-playfair text-xl font-medium text-gray-900 mb-4">FX Options</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">
-                        Vanilla and exotic options strategies providing flexible hedging solutions and downside protection for currency exposures.
-                    </p>
-                </div>
-
-                <div id="ndf-trading" class="bg-white p-8">
-                    <div class="w-10 h-10 bg-gray-900 flex items-center justify-center mb-6">
-                        <i class="fas fa-globe text-white"></i>
-                    </div>
-                    <h3 class="font-playfair text-xl font-medium text-gray-900 mb-4">NDF Trading</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">
-                        Non-deliverable forwards for emerging market currencies with capital controls and restricted convertibility.
-                    </p>
-                </div>
-
-                <div id="algorithmic-execution" class="bg-white p-8">
-                    <div class="w-10 h-10 bg-gray-900 flex items-center justify-center mb-6">
-                        <i class="fas fa-robot text-white"></i>
-                    </div>
-                    <h3 class="font-playfair text-xl font-medium text-gray-900 mb-4">Algorithmic Execution</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">
-                        Sophisticated execution algorithms designed to minimize market impact and optimize pricing for large institutional orders.
-                    </p>
-                </div>
-
-                <div id="structured-fx" class="bg-white p-8">
-                    <div class="w-10 h-10 bg-gray-900 flex items-center justify-center mb-6">
-                        <i class="fas fa-cog text-white"></i>
-                    </div>
-                    <h3 class="font-playfair text-xl font-medium text-gray-900 mb-4">Structured FX</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">
-                        Bespoke structured FX products combining multiple instruments to meet specific risk management and investment objectives.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="execution-coverage" class="py-20 border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-                <div id="execution-model">
-                    <h2 class="font-playfair text-4xl font-medium text-gray-900 mb-4">Execution Model</h2>
+                    <h1 class="font-playfair text-5xl md:text-6xl font-medium text-white mb-6">
+                        Foreign Exchange
+                    </h1>
                     <div class="w-16 h-px bg-gray-900 mb-8"></div>
-                    <div class="space-y-6">
-                        <div class="border-l-2 border-gray-900 pl-6">
-                            <h3 class="font-inter font-semibold text-gray-900 mb-2">Multi-Bank Liquidity</h3>
-                            <p class="text-sm text-gray-600">Direct access to Tier 1 bank liquidity providers ensuring best execution and competitive pricing.</p>
+                    <p class="font-inter text-xl text-gray-400 leading-relaxed mb-8">
+                        Comprehensive institutional FX solutions providing deep liquidity access, sophisticated
+                        execution capabilities, and risk management across 150+ currency pairs with 24/7 global
+                        coverage.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                        <div class="border-r border-gray-200 pr-8">
+                            <div class="text-3xl font-playfair font-medium text-white mb-2">$2.5T+</div>
+                            <div class="text-sm text-gray-400">Daily FX Volume</div>
                         </div>
-                        <div class="border-l-2 border-gray-200 pl-6">
-                            <h3 class="font-inter font-semibold text-gray-900 mb-2">Electronic Platforms</h3>
-                            <p class="text-sm text-gray-600">Seamless integration with leading FX ECNs and proprietary execution technology.</p>
+                        <div class="border-r border-gray-200 pr-8">
+                            <div class="text-3xl font-playfair font-medium text-white mb-2">150+</div>
+                            <div class="text-sm text-gray-400">Currency Pairs</div>
                         </div>
-                        <div class="border-l-2 border-gray-200 pl-6">
-                            <h3 class="font-inter font-semibold text-gray-900 mb-2">Voice Execution</h3>
-                            <p class="text-sm text-gray-600">Dedicated FX specialists for complex transactions and emerging market currencies.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="coverage-model">
-                    <h2 class="font-playfair text-4xl font-medium text-gray-900 mb-4">Coverage Model</h2>
-                    <div class="w-16 h-px bg-gray-900 mb-8"></div>
-                    <div class="space-y-6">
-                        <div class="border-l-2 border-gray-900 pl-6">
-                            <h3 class="font-inter font-semibold text-gray-900 mb-2">Dedicated Relationship Management</h3>
-                            <p class="text-sm text-gray-600">Senior FX specialists providing personalized service and market insights.</p>
-                        </div>
-                        <div class="border-l-2 border-gray-200 pl-6">
-                            <h3 class="font-inter font-semibold text-gray-900 mb-2">Regional Expertise</h3>
-                            <p class="text-sm text-gray-600">Local market specialists across Americas, EMEA, and Asia-Pacific regions.</p>
-                        </div>
-                        <div class="border-l-2 border-gray-200 pl-6">
-                            <h3 class="font-inter font-semibold text-gray-900 mb-2">24/7 Support</h3>
-                            <p class="text-sm text-gray-600">Round-the-clock coverage following global FX markets across all time zones.</p>
+                        <div>
+                            <div class="text-3xl font-playfair font-medium text-white mb-2">24/7</div>
+                            <div class="text-sm text-gray-400">Global Coverage</div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="risk-compliance" class="py-20 border-b border-gray-200">
+        <section id="key-offerings" class="py-20 border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+                <div class="mb-16">
+                    <h2 class="font-playfair text-4xl font-medium text-gray-900 mb-4">Key Offerings</h2>
+                    <div class="w-16 h-px bg-gray-900"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-gray-200">
+                    <div id="spot-transactions" class="bg-white p-8">
+                        <div class="w-10 h-10 bg-gray-900 flex items-center justify-center mb-6">
+                            <i class="fas fa-bolt text-white"></i>
+                        </div>
+                        <h3 class="font-playfair text-xl font-medium text-gray-900 mb-4">Spot Transactions</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Immediate settlement FX transactions with institutional-grade pricing and execution across
+                            major and emerging market currencies.
+                        </p>
+                    </div>
+
+                    <div id="forwards-swaps" class="bg-white p-8">
+                        <div class="w-10 h-10 bg-gray-900 flex items-center justify-center mb-6">
+                            <i class="fas fa-calendar-alt text-white"></i>
+                        </div>
+                        <h3 class="font-playfair text-xl font-medium text-gray-900 mb-4">Forwards & Swaps</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Forward contracts and FX swaps for hedging currency exposure and managing cash flow timing
+                            across multiple settlement dates.
+                        </p>
+                    </div>
+
+                    <div id="fx-options" class="bg-white p-8">
+                        <div class="w-10 h-10 bg-gray-900 flex items-center justify-center mb-6">
+                            <i class="fas fa-chart-line text-white"></i>
+                        </div>
+                        <h3 class="font-playfair text-xl font-medium text-gray-900 mb-4">FX Options</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Vanilla and exotic options strategies providing flexible hedging solutions and downside
+                            protection for currency exposures.
+                        </p>
+                    </div>
+
+                    <div id="ndf-trading" class="bg-white p-8">
+                        <div class="w-10 h-10 bg-gray-900 flex items-center justify-center mb-6">
+                            <i class="fas fa-globe text-white"></i>
+                        </div>
+                        <h3 class="font-playfair text-xl font-medium text-gray-900 mb-4">NDF Trading</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Non-deliverable forwards for emerging market currencies with capital controls and restricted
+                            convertibility.
+                        </p>
+                    </div>
+
+                    <div id="algorithmic-execution" class="bg-white p-8">
+                        <div class="w-10 h-10 bg-gray-900 flex items-center justify-center mb-6">
+                            <i class="fas fa-robot text-white"></i>
+                        </div>
+                        <h3 class="font-playfair text-xl font-medium text-gray-900 mb-4">Algorithmic Execution</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Sophisticated execution algorithms designed to minimize market impact and optimize pricing
+                            for large institutional orders.
+                        </p>
+                    </div>
+
+                    <div id="structured-fx" class="bg-white p-8">
+                        <div class="w-10 h-10 bg-gray-900 flex items-center justify-center mb-6">
+                            <i class="fas fa-cog text-white"></i>
+                        </div>
+                        <h3 class="font-playfair text-xl font-medium text-gray-900 mb-4">Structured FX</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Bespoke structured FX products combining multiple instruments to meet specific risk
+                            management and investment objectives.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="execution-coverage" class="py-20 border-b border-gray-200 bg-black">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                    <div id="execution-model">
+                        <h2 class="font-playfair text-4xl font-medium text-white mb-4">Execution Model</h2>
+                        <div class="w-16 h-px bg-white mb-8"></div>
+                        <div class="space-y-6">
+                            <div class="border-l-2 border-white pl-6">
+                                <h3 class="font-inter font-semibold text-white mb-2">Multi-Bank Liquidity</h3>
+                                <p class="text-sm text-gray-400">Direct access to Tier 1 bank liquidity providers
+                                    ensuring best execution and competitive pricing.</p>
+                            </div>
+                            <div class="border-l-2 border-gray-400 pl-6">
+                                <h3 class="font-inter font-semibold text-white mb-2">Electronic Platforms</h3>
+                                <p class="text-sm text-gray-400">Seamless integration with leading FX ECNs and
+                                    proprietary execution technology.</p>
+                            </div>
+                            <div class="border-l-2 border-gray-400 pl-6">
+                                <h3 class="font-inter font-semibold text-white mb-2">Voice Execution</h3>
+                                <p class="text-sm text-gray-400">Dedicated FX specialists for complex transactions and
+                                    emerging market currencies.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="coverage-model">
+                        <h2 class="font-playfair text-4xl font-medium text-white mb-4">Coverage Model</h2>
+                        <div class="w-16 h-px bg-white mb-8"></div>
+                        <div class="space-y-6">
+                            <div class="border-l-2 border-white pl-6">
+                                <h3 class="font-inter font-semibold text-white mb-2">Dedicated Relationship Management
+                                </h3>
+                                <p class="text-sm text-gray-400">Senior FX specialists providing personalized service
+                                    and market insights.</p>
+                            </div>
+                            <div class="border-l-2 border-gray-400 pl-6">
+                                <h3 class="font-inter font-semibold text-white mb-2">Regional Expertise</h3>
+                                <p class="text-sm text-gray-400">Local market specialists across Americas, EMEA, and
+                                    Asia-Pacific regions.</p>
+                            </div>
+                            <div class="border-l-2 border-gray-400 pl-6">
+                                <h3 class="font-inter font-semibold text-white mb-2">24/7 Support</h3>
+                                <p class="text-sm text-gray-400">Round-the-clock coverage following global FX markets
+                                    across all time zones.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="risk-compliance" class="py-20 border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+                <div class="mb-16">
+                    <h2 class="font-playfair text-4xl font-medium text-gray-900 mb-4">Risk & Compliance</h2>
+                    <div class="w-16 h-px bg-gray-900 mb-6"></div>
+                    <p class="font-inter text-lg text-gray-600 max-w-3xl">
+                        Institutional-grade risk management and regulatory compliance framework ensuring operational
+                        excellence and client protection.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div id="risk-management">
+                        <h3 class="font-playfair text-2xl font-medium text-gray-900 mb-6">Risk Management</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <div class="w-1 h-1 bg-gray-900 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                                <span class="text-sm text-gray-600">Real-time position monitoring and exposure
+                                    limits</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1 h-1 bg-gray-900 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                                <span class="text-sm text-gray-600">Comprehensive credit risk assessment and
+                                    management</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1 h-1 bg-gray-900 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                                <span class="text-sm text-gray-600">Market risk controls and stress testing
+                                    protocols</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1 h-1 bg-gray-900 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                                <span class="text-sm text-gray-600">Operational risk mitigation and business
+                                    continuity</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="compliance-framework">
+                        <h3 class="font-playfair text-2xl font-medium text-gray-900 mb-6">Compliance Framework</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <div class="w-1 h-1 bg-gray-900 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                                <span class="text-sm text-gray-600">MiFID II best execution and transaction
+                                    reporting</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1 h-1 bg-gray-900 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                                <span class="text-sm text-gray-600">EMIR trade reporting and margin requirements</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1 h-1 bg-gray-900 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                                <span class="text-sm text-gray-600">AML/KYC compliance and sanctions screening</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1 h-1 bg-gray-900 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                                <span class="text-sm text-gray-600">Cross-border regulatory coordination</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proof-points" class="py-20 border-b border-gray-200 bg-black">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+                <div class="mb-16">
+                    <h2 class="font-playfair text-4xl font-medium text-white mb-4">Institutional Excellence</h2>
+                    <div class="w-16 h-px bg-white"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-gray-200">
+                    <div id="liquidity-access" class="bg-black p-8 text-center">
+                        <div class="w-12 h-12 bg-white flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-tint text-black"></i>
+                        </div>
+                        <h3 class="font-playfair text-xl font-medium text-white mb-4">Deep Liquidity Access</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed mb-4">
+                            Direct connectivity to 50+ Tier 1 liquidity providers ensuring optimal pricing and execution
+                            quality.
+                        </p>
+                        <div class="text-2xl font-playfair font-medium text-white">50+</div>
+                        <div class="text-xs text-gray-200">Liquidity Providers</div>
+                    </div>
+
+                    <div id="governance" class="bg-black p-8 text-center">
+                        <div class="w-12 h-12 bg-white flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-shield-alt text-black"></i>
+                        </div>
+                        <h3 class="font-playfair text-xl font-medium text-white mb-4">Robust Governance</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed mb-4">
+                            Comprehensive governance framework with independent risk oversight and regulatory
+                            compliance.
+                        </p>
+                        <div class="text-2xl font-playfair font-medium text-white">AAA</div>
+                        <div class="text-xs text-gray-200">Risk Rating</div>
+                    </div>
+
+                    <div id="reporting" class="bg-black p-8 text-center">
+                        <div class="w-12 h-12 bg-white flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-chart-bar text-black"></i>
+                        </div>
+                        <h3 class="font-playfair text-xl font-medium text-white mb-4">Advanced Reporting</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed mb-4">
+                            Real-time trade reporting, analytics, and customizable dashboards for comprehensive
+                            oversight.
+                        </p>
+                        <div class="text-2xl font-playfair font-medium text-white">Real-time</div>
+                        <div class="text-xs text-gray-200">Analytics Platform</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta-section" class="py-24">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+                <div class="bg-black px-12 py-20 text-center">
+                    <h2 class="font-playfair text-4xl md:text-5xl font-medium text-white mb-6">
+                        Ready to Optimize Your FX Operations?
+                    </h2>
+                    <div class="w-16 h-px bg-white mx-auto mb-8"></div>
+                    <p class="font-inter text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
+                        Connect with our institutional FX specialists to discuss how our comprehensive solutions can
+                        enhance your foreign exchange operations.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="#"
+                            class="inline-flex items-center justify-center px-10 py-4 bg-white text-gray-900 text-sm font-medium tracking-wide hover:bg-gray-100 transition-colors">
+                            REQUEST CONSULTATION
+                        </a>
+                        <a href="#"
+                            class="inline-flex items-center justify-center px-10 py-4 border border-white text-white text-sm font-medium tracking-wide hover:bg-white hover:text-gray-900 transition-colors">
+                            DOWNLOAD FX OVERVIEW
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="border-t border-gray-200 py-12 bg-black text-white">
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            <div class="mb-16">
-                <h2 class="font-playfair text-4xl font-medium text-gray-900 mb-4">Risk & Compliance</h2>
-                <div class="w-16 h-px bg-gray-900 mb-6"></div>
-                <p class="font-inter text-lg text-gray-600 max-w-3xl">
-                    Institutional-grade risk management and regulatory compliance framework ensuring operational excellence and client protection.
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div id="risk-management">
-                    <h3 class="font-playfair text-2xl font-medium text-gray-900 mb-6">Risk Management</h3>
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <div class="w-1 h-1 bg-gray-900 rounded-full mt-2 mr-4 flex-shrink-0"></div>
-                            <span class="text-sm text-gray-600">Real-time position monitoring and exposure limits</span>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-1">
+                    <div class="font-playfair text-2xl font-semibold tracking-tight mb-4">SOMAH GROUP</div>
+                    <p class="text-sm text-gray-400 font-inter">
+                        Institutional capital markets solutions for a connected world.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-inter font-semibold text-black text-sm mb-4 tracking-wide">SERVICES</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-sm text-gray-400 hover:text-white transition-colors">Foreign
+                                Exchange</a></li>
+                        <li><a href="#" class="text-sm text-gray-400 hover:text-white transition-colors">Credit
+                                Solutions</a></li>
+                        <li><a href="#" class="text-sm text-gray-400 hover:text-white transition-colors">Cross-Border
+                                Liquidity</a></li>
+                        <li><a href="#" class="text-sm text-gray-400 hover:text-white transition-colors">Risk
+                                Management</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-inter font-semibold text-black text-sm mb-4 tracking-wide">COMPANY</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-sm text-gray-400 hover:text-white transition-colors">About Us</a>
                         </li>
-                        <li class="flex items-start">
-                            <div class="w-1 h-1 bg-gray-900 rounded-full mt-2 mr-4 flex-shrink-0"></div>
-                            <span class="text-sm text-gray-600">Comprehensive credit risk assessment and management</span>
+                        <li><a href="#" class="text-sm text-gray-400 hover:text-white transition-colors">Leadership</a>
                         </li>
-                        <li class="flex items-start">
-                            <div class="w-1 h-1 bg-gray-900 rounded-full mt-2 mr-4 flex-shrink-0"></div>
-                            <span class="text-sm text-gray-600">Market risk controls and stress testing protocols</span>
+                        <li><a href="#" class="text-sm text-gray-400 hover:text-white transition-colors">Careers</a>
                         </li>
-                        <li class="flex items-start">
-                            <div class="w-1 h-1 bg-gray-900 rounded-full mt-2 mr-4 flex-shrink-0"></div>
-                            <span class="text-sm text-gray-600">Operational risk mitigation and business continuity</span>
+                        <li><a href="#" class="text-sm text-gray-400 hover:text-white transition-colors">Contact</a>
                         </li>
                     </ul>
                 </div>
-
-                <div id="compliance-framework">
-                    <h3 class="font-playfair text-2xl font-medium text-gray-900 mb-6">Compliance Framework</h3>
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <div class="w-1 h-1 bg-gray-900 rounded-full mt-2 mr-4 flex-shrink-0"></div>
-                            <span class="text-sm text-gray-600">MiFID II best execution and transaction reporting</span>
+                <div>
+                    <h4 class="font-inter font-semibold text-black text-sm mb-4 tracking-wide">LEGAL</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-sm text-gray-400 hover:text-white transition-colors">Privacy
+                                Policy</a></li>
+                        <li><a href="#" class="text-sm text-gray-400 hover:text-white transition-colors">Terms of
+                                Service</a></li>
+                        <li><a href="#" class="text-sm text-gray-400 hover:text-white transition-colors">Compliance</a>
                         </li>
-                        <li class="flex items-start">
-                            <div class="w-1 h-1 bg-gray-900 rounded-full mt-2 mr-4 flex-shrink-0"></div>
-                            <span class="text-sm text-gray-600">EMIR trade reporting and margin requirements</span>
-                        </li>
-                        <li class="flex items-start">
-                            <div class="w-1 h-1 bg-gray-900 rounded-full mt-2 mr-4 flex-shrink-0"></div>
-                            <span class="text-sm text-gray-600">AML/KYC compliance and sanctions screening</span>
-                        </li>
-                        <li class="flex items-start">
-                            <div class="w-1 h-1 bg-gray-900 rounded-full mt-2 mr-4 flex-shrink-0"></div>
-                            <span class="text-sm text-gray-600">Cross-border regulatory coordination</span>
+                        <li><a href="#" class="text-sm text-gray-400 hover:text-white transition-colors">Disclosures</a>
                         </li>
                     </ul>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="proof-points" class="py-20 border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            <div class="mb-16">
-                <h2 class="font-playfair text-4xl font-medium text-gray-900 mb-4">Institutional Excellence</h2>
-                <div class="w-16 h-px bg-gray-900"></div>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-gray-200">
-                <div id="liquidity-access" class="bg-white p-8 text-center">
-                    <div class="w-12 h-12 bg-gray-900 flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-tint text-white"></i>
-                    </div>
-                    <h3 class="font-playfair text-xl font-medium text-gray-900 mb-4">Deep Liquidity Access</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed mb-4">
-                        Direct connectivity to 50+ Tier 1 liquidity providers ensuring optimal pricing and execution quality.
-                    </p>
-                    <div class="text-2xl font-playfair font-medium text-gray-900">50+</div>
-                    <div class="text-xs text-gray-500">Liquidity Providers</div>
-                </div>
-
-                <div id="governance" class="bg-white p-8 text-center">
-                    <div class="w-12 h-12 bg-gray-900 flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-shield-alt text-white"></i>
-                    </div>
-                    <h3 class="font-playfair text-xl font-medium text-gray-900 mb-4">Robust Governance</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed mb-4">
-                        Comprehensive governance framework with independent risk oversight and regulatory compliance.
-                    </p>
-                    <div class="text-2xl font-playfair font-medium text-gray-900">AAA</div>
-                    <div class="text-xs text-gray-500">Risk Rating</div>
-                </div>
-
-                <div id="reporting" class="bg-white p-8 text-center">
-                    <div class="w-12 h-12 bg-gray-900 flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-chart-bar text-white"></i>
-                    </div>
-                    <h3 class="font-playfair text-xl font-medium text-gray-900 mb-4">Advanced Reporting</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed mb-4">
-                        Real-time trade reporting, analytics, and customizable dashboards for comprehensive oversight.
-                    </p>
-                    <div class="text-2xl font-playfair font-medium text-gray-900">Real-time</div>
-                    <div class="text-xs text-gray-500">Analytics Platform</div>
+            <div class="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-gray-400 font-inter mb-4 md:mb-0">© 2024 Somah Group. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors"><i
+                            class="fab fa-linkedin text-lg"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors"><i
+                            class="fab fa-twitter text-lg"></i></a>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section id="cta-section" class="py-24">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            <div class="bg-gray-900 px-12 py-20 text-center">
-                <h2 class="font-playfair text-4xl md:text-5xl font-medium text-white mb-6">
-                    Ready to Optimize Your FX Operations?
-                </h2>
-                <div class="w-16 h-px bg-white mx-auto mb-8"></div>
-                <p class="font-inter text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
-                    Connect with our institutional FX specialists to discuss how our comprehensive solutions can enhance your foreign exchange operations.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#" class="inline-flex items-center justify-center px-10 py-4 bg-white text-gray-900 text-sm font-medium tracking-wide hover:bg-gray-100 transition-colors">
-                        REQUEST CONSULTATION
-                    </a>
-                    <a href="#" class="inline-flex items-center justify-center px-10 py-4 border border-white text-white text-sm font-medium tracking-wide hover:bg-white hover:text-gray-900 transition-colors">
-                        DOWNLOAD FX OVERVIEW
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-
-<footer id="footer" class="border-t border-gray-200 py-12">
-    <div class="max-w-7xl mx-auto px-6 lg:px-12">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-            <div class="md:col-span-1">
-                <div class="font-playfair text-2xl font-semibold tracking-tight mb-4">SOMAH GROUP</div>
-                <p class="text-sm text-gray-600 font-inter">
-                    Institutional capital markets solutions for a connected world.
-                </p>
-            </div>
-            <div>
-                <h4 class="font-inter font-semibold text-gray-900 text-sm mb-4 tracking-wide">SERVICES</h4>
-                <ul class="space-y-3">
-                    <li><a href="#" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Foreign Exchange</a></li>
-                    <li><a href="#" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Credit Solutions</a></li>
-                    <li><a href="#" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Cross-Border Liquidity</a></li>
-                    <li><a href="#" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Risk Management</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-inter font-semibold text-gray-900 text-sm mb-4 tracking-wide">COMPANY</h4>
-                <ul class="space-y-3">
-                    <li><a href="#" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">About Us</a></li>
-                    <li><a href="#" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Leadership</a></li>
-                    <li><a href="#" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Careers</a></li>
-                    <li><a href="#" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Contact</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-inter font-semibold text-gray-900 text-sm mb-4 tracking-wide">LEGAL</h4>
-                <ul class="space-y-3">
-                    <li><a href="#" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Privacy Policy</a></li>
-                    <li><a href="#" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Terms of Service</a></li>
-                    <li><a href="#" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Compliance</a></li>
-                    <li><a href="#" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Disclosures</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p class="text-sm text-gray-600 font-inter mb-4 md:mb-0">© 2024 Somah Group. All rights reserved.</p>
-            <div class="flex space-x-6">
-                <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors"><i class="fab fa-linkedin text-lg"></i></a>
-                <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors"><i class="fab fa-twitter text-lg"></i></a>
-            </div>
-        </div>
-    </div>
-</footer>
+    </footer>
 
 </body>
+
 </html>
