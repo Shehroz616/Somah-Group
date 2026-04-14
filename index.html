@@ -46,7 +46,7 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
             <div class="flex items-center justify-between h-20">
                 <div class="flex items-center">
-                    <div class="font-playfair text-2xl font-semibold tracking-tight"><img src="assets/img/logo.svg" class="w-24" alt=""></div>
+                    <div class="font-playfair text-2xl font-semibold tracking-tight"><a href="index.html"><img src="assets/img/logo.svg" class="w-24" alt=""></a></div>
                 </div>
                 <nav class="hidden lg:flex items-center space-x-10">
                     <a href="/" class="text-sm font-medium text-black border-b-2 border-black pb-1">Home</a>
@@ -59,9 +59,35 @@
                     <a href="contact.html"
                         class="text-sm font-medium text-gray-500 hover:text-black transition-colors">Contact</a>
                 </nav>
-                <button class="lg:hidden text-black">
+                <button id="hamburger-btn" class="lg:hidden text-black relative">
                     <i class="fas fa-bars text-xl"></i>
                 </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu" class="fixed top-0 right-0 h-screen w-64 bg-black text-white transform translate-x-full transition-transform duration-300 ease-in-out z-40 lg:hidden">
+            <div class="flex flex-col h-full">
+                <div class="flex items-center justify-between px-6 py-6 border-b border-gray-700">
+                    <span class="text-lg font-semibold">Menu</span>
+                    <button id="close-menu-btn" class="text-white">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                <div class="flex-1 overflow-y-auto">
+                    <ul class="flex flex-col space-y-0">
+                        <li><a href="/" class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors">Home</a></li>
+                        <li><a href="capability.html" class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors">Capabilities</a></li>
+                        <li><a href="services.html" class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors">Services</a></li>
+                        <li><a href="about-us.html" class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors">About Us</a></li>
+                        <li><a href="contact.html" class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Mobile Menu Overlay -->
+        <div id="menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 opacity-0 invisible transition-all duration-300 ease-in-out z-30 lg:hidden"></div>
             </div>
         </div>
     </header>
@@ -92,25 +118,6 @@
                         </div>
                     </div>
                     <div class="lg:col-span-5 flex items-center justify-end">
-                        <!-- <div class="grid grid-cols-2 gap-8 w-full max-w-md">
-                            <div class="text-center lg:text-left">
-                                <div class="font-playfair text-5xl font-semibold text-black mb-2">$45B+</div>
-                                <div class="text-sm text-gray-600 font-inter">Annual Volume</div>
-                            </div>
-                            <div class="text-center lg:text-left">
-                                <div class="font-playfair text-5xl font-semibold text-black mb-2">180+</div>
-                                <div class="text-sm text-gray-600 font-inter">Global Markets</div>
-                            </div>
-                            <div class="text-center lg:text-left">
-                                <div class="font-playfair text-5xl font-semibold text-black mb-2">24/7</div>
-                                <div class="text-sm text-gray-600 font-inter">Trading Desk</div>
-                            </div>
-                            <div class="text-center lg:text-left">
-                                <div class="font-playfair text-5xl font-semibold text-black mb-2">AAA</div>
-                                <div class="text-sm text-gray-600 font-inter">Credit Rating</div>
-                            </div>
-                        </div> -->
-
                         <img src="assets/img/hero-image.png" class="w-full hidden md:block" alt="">
                     </div>
                 </div>
@@ -174,56 +181,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- <section id="capabilities" class="py-24 border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            <div class="text-center mb-16">
-                <h2 class="font-playfair text-4xl md:text-5xl font-medium text-black mb-4">Core Capabilities</h2>
-                <div class="w-16 h-px bg-black mx-auto mb-6"></div>
-                <p class="font-inter text-lg text-gray-600 max-w-2xl mx-auto">
-                    Delivering institutional-grade financial solutions across global markets with precision and expertise.
-                </p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-gray-200">
-                <div id="capability-fx" class="bg-white p-10 hover:bg-gray-50 transition-colors group">
-                    <div class="w-12 h-12 bg-black flex items-center justify-center mb-6 group-hover:bg-gray-800 transition-colors">
-                        <i class="fas fa-exchange-alt text-white text-xl"></i>
-                    </div>
-                    <h3 class="font-playfair text-2xl font-medium text-black mb-4">Foreign Exchange</h3>
-                    <p class="font-inter text-gray-600 leading-relaxed mb-6">
-                        Comprehensive FX solutions including spot, forwards, swaps, and options across major and emerging market currencies.
-                    </p>
-                    <a href="#" class="inline-flex items-center text-sm font-medium text-black group-hover:underline">
-                        LEARN MORE <i class="fas fa-arrow-right ml-2 text-xs"></i>
-                    </a>
-                </div>
-                <div id="capability-credit" class="bg-white p-10 hover:bg-gray-50 transition-colors group">
-                    <div class="w-12 h-12 bg-black flex items-center justify-center mb-6 group-hover:bg-gray-800 transition-colors">
-                        <i class="fas fa-chart-line text-white text-xl"></i>
-                    </div>
-                    <h3 class="font-playfair text-2xl font-medium text-black mb-4">Credit Solutions</h3>
-                    <p class="font-inter text-gray-600 leading-relaxed mb-6">
-                        Structured credit products, trade finance, and risk management solutions tailored to institutional requirements.
-                    </p>
-                    <a href="#" class="inline-flex items-center text-sm font-medium text-black group-hover:underline">
-                        LEARN MORE <i class="fas fa-arrow-right ml-2 text-xs"></i>
-                    </a>
-                </div>
-                <div id="capability-liquidity" class="bg-white p-10 hover:bg-gray-50 transition-colors group">
-                    <div class="w-12 h-12 bg-black flex items-center justify-center mb-6 group-hover:bg-gray-800 transition-colors">
-                        <i class="fas fa-globe text-white text-xl"></i>
-                    </div>
-                    <h3 class="font-playfair text-2xl font-medium text-black mb-4">Cross-Border Liquidity</h3>
-                    <p class="font-inter text-gray-600 leading-relaxed mb-6">
-                        Seamless cross-border payment infrastructure and liquidity management for global operations and settlements.
-                    </p>
-                    <a href="#" class="inline-flex items-center text-sm font-medium text-black group-hover:underline">
-                        LEARN MORE <i class="fas fa-arrow-right ml-2 text-xs"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
         <section id="institutional-focus" class="py-24 border-b border-gray-200 bg-black text-white">
             <div class="max-w-7xl mx-auto px-6 lg:px-12">
@@ -410,6 +367,8 @@
     <div id="float-3" class="img-float">
         <img src="assets/img/jakub-zerdzicki--nJ9k6iU6_g-unsplash.jpg" alt="..." />
     </div>
+
+    <script src="assets/js/main.js"></script>
 
     <script>
         const headings = document.querySelectorAll('.cap-heading');
