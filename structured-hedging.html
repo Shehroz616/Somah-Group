@@ -1,612 +1,493 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Structured Hedging - Somah Group</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      window.FontAwesomeConfig = { autoReplaceSvg: "nest" };
-    </script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="shortcut icon"
-      href="assets/img/favicon.svg"
-      type="image/x-icon"
-    />
 
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <style>
-      ::-webkit-scrollbar {
-        display: none;
-      }
-    </style>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              playfair: ["Playfair Display", "serif"],
-              inter: ["Inter", "sans-serif"],
-            },
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Structured Hedging - Somah Group</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: "nest" };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            playfair: ["Playfair Display", "serif"],
+            inter: ["Inter", "sans-serif"],
           },
         },
-      };
-    </script>
-  </head>
+      },
+    };
+  </script>
+</head>
 
-  <body class="font-inter bg-white text-gray-900">
-    <header id="header" class="border-b border-gray-200">
-      <div class="max-w-7xl mx-auto px-6 lg:px-12">
-        <div class="flex items-center justify-between h-20">
-          <div class="flex items-center">
-            <div class="font-playfair text-2xl font-semibold tracking-tight">
-              <a href="index.html"
-                ><img
-                  src="assets/img/black-logo.jpeg"
-                  class="w-36"
-                  alt="Somah Group"
-              /></a>
-            </div>
+<body class="font-inter bg-white text-black">
+  <header id="header" class="border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="flex items-center justify-between h-20">
+        <div class="flex items-center">
+          <div class="font-playfair text-2xl font-semibold tracking-tight">
+            <a href="index.html"><img src="assets/img/black-logo.jpeg" class="w-36" alt="" /></a>
           </div>
-          <nav class="hidden lg:flex items-center space-x-10">
-            <a
-              href="index.html"
-              class="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors"
-              >Home</a
-            >
-            <a
-              href="capability.html"
-              class="text-sm font-medium text-gray-900 border-b-2 border-gray-900 pb-1"
-              >Capabilities</a
-            >
-            <a
-              href="services.html"
-              class="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors"
-              >Services</a
-            >
-            <a
-              href="sectors.html"
-              class="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors"
-              >Sectors</a
-            >
-            <a
-              href="partnerships.html"
-              class="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors"
-              >Partnerships</a
-            >
-            <a
-              href="about-us.html"
-              class="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors"
-              >About Us</a
-            >
-            <a
-              href="insights.html"
-              class="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors"
-              >Insights</a
-            >
-            <a
-              href="contact.html"
-              class="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors"
-              >Contact</a
-            >
-          </nav>
-          <button id="hamburger-btn" class="lg:hidden text-black relative">
-            <i class="fas fa-bars text-xl"></i>
+        </div>
+        <nav class="hidden lg:flex items-center space-x-10">
+          <a href="index.html" class="text-sm font-medium text-gray-500 hover:text-black transition-colors">Home</a>
+          <a href="capability.html" class="text-sm font-medium text-black border-b-2 border-black pb-1">Capabilities</a>
+          <a href="sectors.html"
+            class="text-sm font-medium text-gray-500 hover:text-black transition-colors">Sectors</a>
+          <a href="partnerships.html"
+            class="text-sm font-medium text-gray-500 hover:text-black transition-colors">Partnerships</a>
+          <a href="insights.html"
+            class="text-sm font-medium text-gray-500 hover:text-black transition-colors">Insights</a>
+          <a href="about-us.html" class="text-sm font-medium text-gray-500 hover:text-black transition-colors">About
+            Us</a>
+          <a href="contact.html"
+            class="text-sm font-medium text-gray-500 hover:text-black transition-colors">Contact</a>
+        </nav>
+        <button id="hamburger-btn" class="lg:hidden text-black relative">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu"
+      class="fixed top-0 right-0 h-screen w-64 bg-black text-white transform translate-x-full transition-transform duration-300 ease-in-out z-40 lg:hidden">
+      <div class="flex flex-col h-full">
+        <div class="flex items-center justify-between px-6 py-6 border-b border-gray-700">
+          <span class="text-lg font-semibold">Menu</span>
+          <button id="close-menu-btn" class="text-white">
+            <i class="fas fa-times text-xl"></i>
           </button>
         </div>
-      </div>
-      <!-- Mobile Menu -->
-      <nav
-        id="mobile-menu"
-        class="fixed top-0 right-0 h-screen w-64 bg-black text-white transform translate-x-full transition-transform duration-300 ease-in-out z-40 lg:hidden"
-      >
-        <div class="flex flex-col h-full">
-          <div
-            class="flex items-center justify-between px-6 py-6 border-b border-gray-700"
-          >
-            <span class="text-lg font-semibold">Menu</span>
-            <button id="close-menu-btn" class="text-white">
-              <i class="fas fa-times text-xl"></i>
-            </button>
-          </div>
-          <div class="flex-1 overflow-y-auto">
-            <ul class="flex flex-col space-y-0">
-              <li>
-                <a
-                  href="index.html"
-                  class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  href="capability.html"
-                  class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors"
-                  >Capabilities</a
-                >
-              </li>
-              <li>
-                <a
-                  href="services.html"
-                  class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors"
-                  >Services</a
-                >
-              </li>
-              <li>
-                <a
-                  href="sectors.html"
-                  class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors"
-                  >Sectors</a
-                >
-              </li>
-              <li>
-                <a
-                  href="partnerships.html"
-                  class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors"
-                  >Partnerships</a
-                >
-              </li>
-              <li>
-                <a
-                  href="insights.html"
-                  class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors"
-                  >Insights</a
-                >
-              </li>
-              <li>
-                <a
-                  href="about-us.html"
-                  class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors"
-                  >About Us</a
-                >
-              </li>
-              <li>
-                <a
-                  href="contact.html"
-                  class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
+        <div class="flex-1 overflow-y-auto">
+          <ul class="flex flex-col space-y-0">
+            <li>
+              <a href="index.html"
+                class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors">Home</a>
+            </li>
+            <li>
+              <a href="capability.html"
+                class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors">Capabilities</a>
+            </li>
+            <li>
+              <a href="services.html"
+                class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors">Services</a>
+            </li>
+            <li>
+              <a href="sectors.html"
+                class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors">Sectors</a>
+            </li>
+            <li>
+              <a href="partnerships.html"
+                class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors">Partnerships</a>
+            </li>
+            <li>
+              <a href="insights.html"
+                class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors">Insights</a>
+            </li>
+            <li>
+              <a href="about-us.html"
+                class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors">About
+                Us</a>
+            </li>
+            <li>
+              <a href="contact.html"
+                class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors">Contact</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
-      <!-- Mobile Menu Overlay -->
+    <!-- Mobile Menu Overlay -->
+    <div id="menu-overlay"
+      class="fixed inset-0 bg-black bg-opacity-50 opacity-0 invisible transition-all duration-300 ease-in-out z-30 lg:hidden">
+    </div>
+  </header>
+
+  <main>
+    <!-- Top Testimonial Banner -->
+    <div class="bg-gray-100 py-3 border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <p class="text-xs md:text-sm font-medium text-gray-600 text-center italic">
+          “The structured approach improved our average rate across the year, not just individual trades.”
+        </p>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="py-24 md:py-32 bg-black text-white relative overflow-hidden">
       <div
-        id="menu-overlay"
-        class="fixed inset-0 bg-black bg-opacity-50 opacity-0 invisible transition-all duration-300 ease-in-out z-30 lg:hidden"
-      ></div>
-    </header>
-
-    <main>
-      <!-- Top Testimonial Banner -->
-      <div class="bg-gray-100 py-3 border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
-          <p class="text-xs md:text-sm font-medium text-gray-600 text-center italic">
-            “The structured approach improved our average rate across the year, not just individual trades.”
+        class="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center">
+      </div>
+      <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-20">
+        <div class="max-w-4xl">
+          <a href="corporate-fx.html"
+            class="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors font-medium tracking-widest text-xs uppercase mb-6">
+            <i class="fas fa-arrow-left"></i>
+            Corporate FX
+          </a>
+          <h1 class="font-playfair text-5xl md:text-7xl font-medium leading-tight mb-8">
+            Structured Hedging
+          </h1>
+          <div class="w-24 h-px bg-white/30 mb-8"></div>
+          <p class="text-xl md:text-2xl text-gray-300 font-light max-w-2xl leading-relaxed">
+            Advanced derivative strategies tailored to protect margins and optimize risk in volatile market conditions.
           </p>
         </div>
       </div>
+    </section>
 
-      <!-- Hero Section -->
-      <section
-        id="hero"
-        class="py-24 md:py-32 bg-black text-white relative overflow-hidden"
-      >
-        <div class="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center"></div>
-        <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-20">
-          <div class="max-w-4xl">
-            <a href="corporate-fx.html" class="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors font-medium tracking-widest text-xs uppercase mb-6">
-              <i class="fas fa-arrow-left"></i>
-              Corporate FX
-            </a>
-            <h1
-              class="font-playfair text-5xl md:text-7xl font-medium leading-tight mb-8"
-            >
-              Structured Hedging
-            </h1>
-            <div class="w-24 h-px bg-white/30 mb-8"></div>
-            <p class="text-xl md:text-2xl text-gray-300 font-light max-w-2xl leading-relaxed">
-              Advanced derivative strategies tailored to protect margins and optimize risk in volatile market conditions.
+    <!-- Problem Section -->
+    <section id="problem" class="py-24 bg-white border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          <div>
+            <h2 class="font-playfair text-3xl md:text-4xl font-medium mb-6 text-gray-400 uppercase">
+              Problem
+            </h2>
+            <h3 class="text-3xl md:text-5xl font-inter font-light leading-tight mb-8">
+              Suboptimal <span class="text-black font-medium">Hedging</span> Habits.
+            </h3>
+            <p class="text-lg text-gray-600 leading-relaxed mb-6">
+              Most businesses default to one of three poor approaches to managing currency exposure, resulting in
+              unnecessary, unrewarded risk.
             </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Problem Section -->
-      <section id="problem" class="py-24 bg-white border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            <div>
-              <h2
-                class="font-playfair text-3xl md:text-4xl font-medium mb-6 text-gray-400 uppercase"
-              >
-                Problem
-              </h2>
-              <h3
-                class="text-3xl md:text-5xl font-inter font-light leading-tight mb-8"
-              >
-                Suboptimal <span class="text-black font-medium">Hedging</span> Habits.
-              </h3>
-              <p class="text-lg text-gray-600 leading-relaxed mb-6">
-                Most businesses default to one of three poor approaches to managing currency exposure, resulting in unnecessary, unrewarded risk.
+            <div class="border-l-4 border-red-500 pl-6 py-2 bg-red-50/50">
+              <p class="text-lg font-medium text-black">
+                This leads to missed opportunities and immense margin pressure.
               </p>
-              <div class="border-l-4 border-red-500 pl-6 py-2 bg-red-50/50">
-                <p class="text-lg font-medium text-black">
-                  This leads to missed opportunities and immense margin pressure.
+            </div>
+          </div>
+          <div class="grid grid-cols-1 gap-6">
+            <div
+              class="bg-gray-50 border border-gray-100 p-8 flex items-start gap-6 group hover:border-black hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+              <i
+                class="fas fa-eye-slash text-gray-300 text-3xl group-hover:text-black transition-colors mt-1 w-8 text-center"></i>
+              <div>
+                <h4 class="text-lg font-medium mb-2 uppercase tracking-wide text-sm font-bold text-gray-900">They Don’t
+                  Hedge</h4>
+                <p class="text-gray-500 text-sm">Leaving the entire bottom line exposed to unpredictable market
+                  volatility.</p>
+              </div>
+            </div>
+            <div
+              class="bg-gray-50 border border-gray-100 p-8 flex items-start gap-6 group hover:border-black hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+              <i
+                class="fas fa-lock text-gray-300 text-3xl group-hover:text-black transition-colors mt-1 w-8 text-center"></i>
+              <div>
+                <h4 class="text-lg font-medium mb-2 uppercase tracking-wide text-sm font-bold text-gray-900">They
+                  Over-Hedge</h4>
+                <p class="text-gray-500 text-sm">Locking up excessive liquidity, tying their hands, and limiting
+                  potential upside completely.</p>
+              </div>
+            </div>
+            <div
+              class="bg-gray-50 border border-gray-100 p-8 flex items-start gap-6 group hover:border-black hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+              <i
+                class="fas fa-layer-group text-gray-300 text-3xl group-hover:text-black transition-colors mt-1 w-8 text-center"></i>
+              <div>
+                <h4 class="text-lg font-medium mb-2 uppercase tracking-wide text-sm font-bold text-gray-900">Or use
+                  basic forwards only</h4>
+                <p class="text-gray-500 text-sm">Using blunt instruments exclusively for complex, nuanced pricing risks.
                 </p>
               </div>
             </div>
-            <div class="grid grid-cols-1 gap-6">
-              <div class="bg-gray-50 border border-gray-100 p-8 flex items-start gap-6 group hover:border-black hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
-                <i class="fas fa-eye-slash text-gray-300 text-3xl group-hover:text-black transition-colors mt-1 w-8 text-center"></i>
-                <div>
-                   <h4 class="text-lg font-medium mb-2 uppercase tracking-wide text-sm font-bold text-gray-900">They Don’t Hedge</h4>
-                   <p class="text-gray-500 text-sm">Leaving the entire bottom line exposed to unpredictable market volatility.</p>
-                </div>
-              </div>
-              <div class="bg-gray-50 border border-gray-100 p-8 flex items-start gap-6 group hover:border-black hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
-                <i class="fas fa-lock text-gray-300 text-3xl group-hover:text-black transition-colors mt-1 w-8 text-center"></i>
-                <div>
-                   <h4 class="text-lg font-medium mb-2 uppercase tracking-wide text-sm font-bold text-gray-900">They Over-Hedge</h4>
-                   <p class="text-gray-500 text-sm">Locking up excessive liquidity, tying their hands, and limiting potential upside completely.</p>
-                </div>
-              </div>
-              <div class="bg-gray-50 border border-gray-100 p-8 flex items-start gap-6 group hover:border-black hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
-                <i class="fas fa-layer-group text-gray-300 text-3xl group-hover:text-black transition-colors mt-1 w-8 text-center"></i>
-                <div>
-                   <h4 class="text-lg font-medium mb-2 uppercase tracking-wide text-sm font-bold text-gray-900">Or use basic forwards only</h4>
-                   <p class="text-gray-500 text-sm">Using blunt instruments exclusively for complex, nuanced pricing risks.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Solution Section -->
-      <section id="solution" class="py-24 bg-black text-white relative">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-          <div class="text-center max-w-4xl mx-auto mb-20">
-            <h2
-              class="font-playfair text-3xl md:text-4xl font-medium mb-6 text-gray-500 uppercase"
-            >
-              Solution
-            </h2>
-            <h3
-              class="text-3xl md:text-5xl lg:text-5xl font-inter leading-tight font-light"
-            >
-              Access to <span class="font-medium text-white italic relative inline-block">structured hedging strategies<span class="absolute bottom-0 left-0 w-full h-1 bg-white/30 hidden md:block"></span></span> via institutional partners.
-            </h3>
-            <p class="text-xl text-gray-400 mt-8 max-w-2xl mx-auto font-light">
-              Used correctly, these sophisticated instruments fundamentally change the mechanics of your returns.
-            </p>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-            <div class="bg-white/5 p-12 border border-white/10 hover:border-white/30 transition-all duration-300 transform hover:-translate-y-1">
-              <h4 class="text-xs font-bold tracking-[0.3em] uppercase text-gray-400 mb-8">Traditional Hedging</h4>
-              <p class="text-2xl font-inter font-light text-white mb-6 leading-relaxed">
-                Traditional hedging (forwards) provides certainty — <span class="text-gray-500 italic">but removes upside.</span>
-              </p>
-              <div class="w-12 h-px bg-white/10 mb-8"></div>
-              <p class="text-gray-400 text-sm leading-relaxed">
-                A business buying USD locks in a fixed rate. While this provides budget certainty, it removes any ability to benefit from a market move in their favor.
-              </p>
-            </div>
-            <div class="bg-white/5 p-12 border border-white/20 hover:border-white/40 transition-all duration-300 transform hover:-translate-y-1 relative overflow-hidden group">
-              <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                <i class="fas fa-gem text-6xl"></i>
-              </div>
-              <h4 class="text-xs font-bold tracking-[0.3em] uppercase text-white mb-8">Structured Hedging</h4>
-              <p class="text-2xl font-inter font-light text-white mb-10 leading-relaxed">
-                Structured hedging allows for <span class="text-white font-medium italic underline decoration-white/30 underline-offset-8">asymmetric outcomes.</span>
-              </p>
-              <ul class="space-y-6">
-                <li class="flex items-start gap-4">
-                  <div class="w-2 h-2 bg-white mt-2 flex-shrink-0"></div>
-                  <div>
-                    <h5 class="text-white font-medium text-lg leading-tight mb-1">Protection</h5>
-                    <p class="text-gray-400 text-sm leading-relaxed">Secure floor rates when the market moves against you.</p>
-                  </div>
-                </li>
-                <li class="flex items-start gap-4">
-                  <div class="w-2 h-2 bg-white mt-2 flex-shrink-0"></div>
-                  <div>
-                    <h5 class="text-white font-medium text-lg leading-tight mb-1">Participation</h5>
-                    <p class="text-gray-400 text-sm leading-relaxed">Retain upside movement when the market moves in your favour (within defined parameters).</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="mt-20 max-w-5xl mx-auto bg-white/5 p-12 border border-dashed border-white/20">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h4 class="text-xs font-bold tracking-[0.3em] uppercase text-gray-400 mb-6">Outcome</h4>
-                    <ul class="space-y-4">
-                        <li class="flex items-center gap-3 text-white">
-                            <i class="fas fa-check text-xs text-green-500"></i> Improved average exchange rate over time
-                        </li>
-                        <li class="flex items-center gap-3 text-white">
-                            <i class="fas fa-check text-xs text-green-500"></i> Better margin retention
-                        </li>
-                        <li class="flex items-center gap-3 text-white">
-                            <i class="fas fa-check text-xs text-green-500"></i> More flexible treasury strategy
-                        </li>
-                    </ul>
-                </div>
-                <div class="text-center md:text-left">
-                    <p class="font-playfair text-xl italic text-gray-300 leading-relaxed">
-                        "When structured correctly and priced through the right counterparties, these solutions can materially improve outcomes versus standard hedging alone."
-                    </p>
-                </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Positioning Section -->
-      <section id="positioning" class="py-24 md:py-32 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div class="order-2 lg:order-1 grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <!-- provider selection -->
-                <div class="p-8 bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-                   <div class="w-12 h-12 bg-black text-white flex items-center justify-center rounded mb-6">
-                      <i class="fas fa-handshake"></i>
-                   </div>
-                   <h4 class="text-lg font-medium mb-2 text-black leading-tight">Provider Selection</h4>
-                </div>
-                <!-- pricing validation -->
-                <div class="p-8 bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow mt-0 sm:mt-12">
-                   <div class="w-12 h-12 bg-black text-white flex items-center justify-center rounded mb-6">
-                      <i class="fas fa-search-dollar"></i>
-                   </div>
-                   <h4 class="text-lg font-medium mb-2 text-black leading-tight">Pricing Validation</h4>
-                </div>
-                <!-- structure suitability -->
-                <div class="p-8 bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-                   <div class="w-12 h-12 bg-black text-white flex items-center justify-center rounded mb-6">
-                      <i class="fas fa-puzzle-piece"></i>
-                   </div>
-                   <h4 class="text-lg font-medium mb-2 text-black leading-tight">Structure Suitability</h4>
-                </div>
-                <div class="p-8 bg-black text-white border border-gray-800 shadow-sm sm:mt-12 flex flex-col justify-center text-center">
-                   <i class="fas fa-quote-left text-gray-700 text-3xl mb-4"></i>
-                   <p class="text-xl font-playfair font-medium leading-relaxed italic">
-                      Aligned,<br/>not over-engineered.
-                   </p>
-                </div>
-            </div>
-            <div class="order-1 lg:order-2 lg:pl-10">
-              <h2 class="font-playfair text-3xl md:text-4xl font-medium mb-6 uppercase tracking-wider text-gray-900 border-l-4 border-black pl-4">
-                Positioning
-              </h2>
-              <h3 class="text-3xl md:text-5xl font-inter font-light leading-tight mb-8">
-                We guide clients through the complexity.
-              </h3>
-              <p class="text-xl text-gray-600 leading-relaxed max-w-lg mb-8">
-                Ensuring your hedging solutions are perfectly suited to your commercial reality. We manage the process end-to-end to deliver maximum advantage.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CTA Section -->
-      <section id="cta-section" class="py-24">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
-          <div class="bg-black px-12 py-20 text-center">
-            <h2
-              class="font-playfair text-4xl md:text-5xl font-medium text-white mb-6"
-            >
-              Build a Resilient Strategy
-            </h2>
-            <div class="w-16 h-px bg-white mx-auto mb-8"></div>
-            <p class="font-inter text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
-              Ready to explore how structured hedging can protect your margins? Speak with our capital markets team today.
-            </p>
-            <a
-              href="contact.html"
-              class="inline-flex items-center justify-center px-10 py-4 bg-white text-black text-sm font-medium tracking-wide hover:bg-gray-200 hover:shadow-lg transition-all duration-300"
-            >
-              GET IN TOUCH
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer
-      id="footer"
-      class="border-t border-gray-200 py-12 bg-black text-white"
-    >
-      <div class="max-w-7xl mx-auto px-6 lg:px-12">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-          <div class="md:col-span-1">
-            <div class="font-playfair font-semibold tracking-tight mb-4">
-              <img
-                src="assets/img/white-logo.jpeg"
-                class="w-36"
-                alt="Somah Group"
-              />
-            </div>
-            <p class="text-sm text-gray-400 font-inter">
-              Institutional capital markets solutions for a connected world.
-            </p>
-          </div>
-          <div>
-            <h4
-              class="font-inter font-semibold text-white text-sm mb-4 tracking-wide"
-            >
-              SERVICES
-            </h4>
-            <ul class="space-y-3">
-              <li>
-                <a
-                  href="commercial-finance.html"
-                  class="text-sm text-gray-400 hover:text-white transition-colors"
-                  >Commercial Finance</a
-                >
-              </li>
-              <li>
-                <a
-                  href="corporate-fx.html"
-                  class="text-sm text-gray-400 hover:text-white transition-colors"
-                  >Corporate FX</a
-                >
-              </li>
-              <li>
-                <a
-                  href="emerging-liquidity.html"
-                  class="text-sm text-gray-400 hover:text-white transition-colors"
-                  >Emerging Liquidity</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4
-              class="font-inter font-semibold text-white text-sm mb-4 tracking-wide"
-            >
-              COMPANY
-            </h4>
-            <ul class="space-y-3">
-              <li>
-                <a
-                  href="about-us.html"
-                  class="text-sm text-gray-400 hover:text-white transition-colors"
-                  >About Us</a
-                >
-              </li>
-              <li>
-                <a
-                  href="services.html"
-                  class="text-sm text-gray-400 hover:text-white transition-colors"
-                  >Services</a
-                >
-              </li>
-              <li>
-                <a
-                  href="sectors.html"
-                  class="text-sm text-gray-400 hover:text-white transition-colors"
-                  >Sectors</a
-                >
-              </li>
-              <li>
-                <a
-                  href="partnerships.html"
-                  class="text-sm text-gray-400 hover:text-white transition-colors"
-                  >Partnerships</a
-                >
-              </li>
-              <li>
-                <a
-                  href="insights.html"
-                  class="text-sm text-gray-400 hover:text-white transition-colors"
-                  >Insights</a
-                >
-              </li>
-              <li>
-                <a
-                  href="contact.html"
-                  class="text-sm text-gray-400 hover:text-white transition-colors"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4
-              class="font-inter font-semibold text-white text-sm mb-4 tracking-wide"
-            >
-              LEGAL
-            </h4>
-            <ul class="space-y-3">
-              <li>
-                <a
-                  href="privacy-policy.html"
-                  class="text-sm text-gray-400 hover:text-white transition-colors"
-                  >Privacy Policy</a
-                >
-              </li>
-              <li>
-                <a
-                  href="terms-and-service.html"
-                  class="text-sm text-gray-400 hover:text-white transition-colors"
-                  >Terms of Service</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div
-          class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center"
-        >
-          <p class="text-sm text-gray-400 font-inter mb-4 md:mb-0">
-            © 2024 Somah Group. All rights reserved.
-          </p>
-          <div class="flex space-x-6">
-            <a href="#" class="text-gray-400 hover:text-white transition-colors"
-              ><i class="fab fa-linkedin text-lg"></i
-            ></a>
-            <a href="#" class="text-gray-400 hover:text-white transition-colors"
-              ><i class="fab fa-twitter text-lg"></i
-            ></a>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <script src="assets/js/main.js"></script>
-    <script>
-      // Hamburger Menu Toggle
-      const hamburgerBtn = document.getElementById("hamburger-btn");
-      const mobileMenu = document.getElementById("mobile-menu");
-      const closeMenuBtn = document.getElementById("close-menu-btn");
-      const menuOverlay = document.getElementById("menu-overlay");
+    <!-- Solution Section -->
+    <section id="solution" class="py-24 bg-black text-white relative">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+        <div class="text-center max-w-4xl mx-auto mb-20">
+          <h2 class="font-playfair text-3xl md:text-4xl font-medium mb-6 text-gray-500 uppercase">
+            Solution
+          </h2>
+          <h3 class="text-3xl md:text-5xl lg:text-5xl font-inter leading-tight font-light">
+            Access to <span class="font-medium text-white italic relative inline-block">structured hedging
+              strategies<span class="absolute bottom-0 left-0 w-full h-1 bg-white/30 hidden md:block"></span></span> via
+            institutional partners.
+          </h3>
+          <p class="text-xl text-gray-400 mt-8 max-w-2xl mx-auto font-light">
+            Used correctly, these sophisticated instruments fundamentally change the mechanics of your returns.
+          </p>
+        </div>
 
-      if (hamburgerBtn) {
-        hamburgerBtn.addEventListener("click", () => {
-          mobileMenu.classList.add("active");
-          menuOverlay.classList.add("active");
-        });
-      }
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <div
+            class="bg-white/5 p-12 border border-white/10 hover:border-white/30 transition-all duration-300 transform hover:-translate-y-1">
+            <h4 class="text-xs font-bold tracking-[0.3em] uppercase text-gray-400 mb-8">Traditional Hedging</h4>
+            <p class="text-2xl font-inter font-light text-white mb-6 leading-relaxed">
+              Traditional hedging (forwards) provides certainty — <span class="text-gray-500 italic">but removes
+                upside.</span>
+            </p>
+            <div class="w-12 h-px bg-white/10 mb-8"></div>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              A business buying USD locks in a fixed rate. While this provides budget certainty, it removes any ability
+              to benefit from a market move in their favor.
+            </p>
+          </div>
+          <div
+            class="bg-white/5 p-12 border border-white/20 hover:border-white/40 transition-all duration-300 transform hover:-translate-y-1 relative overflow-hidden group">
+            <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+              <i class="fas fa-gem text-6xl"></i>
+            </div>
+            <h4 class="text-xs font-bold tracking-[0.3em] uppercase text-white mb-8">Structured Hedging</h4>
+            <p class="text-2xl font-inter font-light text-white mb-10 leading-relaxed">
+              Structured hedging allows for <span
+                class="text-white font-medium italic underline decoration-white/30 underline-offset-8">asymmetric
+                outcomes.</span>
+            </p>
+            <ul class="space-y-6">
+              <li class="flex items-start gap-4">
+                <div class="w-2 h-2 bg-white mt-2 flex-shrink-0"></div>
+                <div>
+                  <h5 class="text-white font-medium text-lg leading-tight mb-1">Protection</h5>
+                  <p class="text-gray-400 text-sm leading-relaxed">Secure floor rates when the market moves against you.
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-start gap-4">
+                <div class="w-2 h-2 bg-white mt-2 flex-shrink-0"></div>
+                <div>
+                  <h5 class="text-white font-medium text-lg leading-tight mb-1">Participation</h5>
+                  <p class="text-gray-400 text-sm leading-relaxed">Retain upside movement when the market moves in your
+                    favour (within defined parameters).</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-      if (closeMenuBtn) {
-        closeMenuBtn.addEventListener("click", () => {
-          mobileMenu.classList.remove("active");
-          menuOverlay.classList.remove("active");
-        });
-      }
+        <div class="mt-20 max-w-5xl mx-auto bg-white/5 p-12 border border-dashed border-white/20">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h4 class="text-xs font-bold tracking-[0.3em] uppercase text-gray-400 mb-6">Outcome</h4>
+              <ul class="space-y-4">
+                <li class="flex items-center gap-3 text-white">
+                  <i class="fas fa-check text-xs text-green-500"></i> Improved average exchange rate over time
+                </li>
+                <li class="flex items-center gap-3 text-white">
+                  <i class="fas fa-check text-xs text-green-500"></i> Better margin retention
+                </li>
+                <li class="flex items-center gap-3 text-white">
+                  <i class="fas fa-check text-xs text-green-500"></i> More flexible treasury strategy
+                </li>
+              </ul>
+            </div>
+            <div class="text-center md:text-left">
+              <p class="font-playfair text-xl italic text-gray-300 leading-relaxed">
+                "When structured correctly and priced through the right counterparties, these solutions can materially
+                improve outcomes versus standard hedging alone."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      if (menuOverlay) {
-        menuOverlay.addEventListener("click", () => {
-          mobileMenu.classList.remove("active");
-          menuOverlay.classList.remove("active");
-        });
-      }
-    </script>
-  </body>
+    <!-- Positioning Section -->
+    <section id="positioning" class="py-24 md:py-32 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div class="order-2 lg:order-1 grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <!-- provider selection -->
+            <div class="p-8 bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-12 h-12 bg-black text-white flex items-center justify-center rounded mb-6">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <h4 class="text-lg font-medium mb-2 text-black leading-tight">Provider Selection</h4>
+            </div>
+            <!-- pricing validation -->
+            <div class="p-8 bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow mt-0 sm:mt-12">
+              <div class="w-12 h-12 bg-black text-white flex items-center justify-center rounded mb-6">
+                <i class="fas fa-search-dollar"></i>
+              </div>
+              <h4 class="text-lg font-medium mb-2 text-black leading-tight">Pricing Validation</h4>
+            </div>
+            <!-- structure suitability -->
+            <div class="p-8 bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-12 h-12 bg-black text-white flex items-center justify-center rounded mb-6">
+                <i class="fas fa-puzzle-piece"></i>
+              </div>
+              <h4 class="text-lg font-medium mb-2 text-black leading-tight">Structure Suitability</h4>
+            </div>
+            <div
+              class="p-8 bg-black text-white border border-gray-800 shadow-sm sm:mt-12 flex flex-col justify-center text-center">
+              <i class="fas fa-quote-left text-gray-700 text-3xl mb-4"></i>
+              <p class="text-xl font-playfair font-medium leading-relaxed italic">
+                Aligned,<br />not over-engineered.
+              </p>
+            </div>
+          </div>
+          <div class="order-1 lg:order-2 lg:pl-10">
+            <h2
+              class="font-playfair text-3xl md:text-4xl font-medium mb-6 uppercase tracking-wider text-gray-900 border-l-4 border-black pl-4">
+              Positioning
+            </h2>
+            <h3 class="text-3xl md:text-5xl font-inter font-light leading-tight mb-8">
+              We guide clients through the complexity.
+            </h3>
+            <p class="text-xl text-gray-600 leading-relaxed max-w-lg mb-8">
+              Ensuring your hedging solutions are perfectly suited to your commercial reality. We manage the process
+              end-to-end to deliver maximum advantage.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta-section" class="py-24">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="bg-black px-12 py-20 text-center">
+          <h2 class="font-playfair text-4xl md:text-5xl font-medium text-white mb-6">
+            Build a Resilient Strategy
+          </h2>
+          <div class="w-16 h-px bg-white mx-auto mb-8"></div>
+          <p class="font-inter text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
+            Ready to explore how structured hedging can protect your margins? Speak with our capital markets team today.
+          </p>
+          <a href="contact.html"
+            class="inline-flex items-center justify-center px-10 py-4 bg-white text-black text-sm font-medium tracking-wide hover:bg-gray-200 hover:shadow-lg transition-all duration-300">
+            GET IN TOUCH
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="border-t border-gray-200 py-12 bg-black text-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div class="md:col-span-1">
+          <div class="font-playfair font-semibold tracking-tight mb-4">
+            <img src="assets/img/white-logo.jpeg" class="w-36" alt="Somah Group" />
+          </div>
+          <p class="text-sm text-gray-400 font-inter">
+            Institutional capital markets solutions for a connected world.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-inter font-semibold text-white text-sm mb-4 tracking-wide">
+            SERVICES
+          </h4>
+          <ul class="space-y-3">
+            <li>
+              <a href="commercial-finance.html"
+                class="text-sm text-gray-400 hover:text-white transition-colors">Commercial Finance</a>
+            </li>
+            <li>
+              <a href="corporate-fx.html" class="text-sm text-gray-400 hover:text-white transition-colors">Corporate
+                FX</a>
+            </li>
+            <li>
+              <a href="emerging-liquidity.html"
+                class="text-sm text-gray-400 hover:text-white transition-colors">Emerging Liquidity</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-inter font-semibold text-white text-sm mb-4 tracking-wide">
+            COMPANY
+          </h4>
+          <ul class="space-y-3">
+            <li>
+              <a href="about-us.html" class="text-sm text-gray-400 hover:text-white transition-colors">About Us</a>
+            </li>
+            <li>
+              <a href="sectors.html" class="text-sm text-gray-400 hover:text-white transition-colors">Sectors</a>
+            </li>
+            <li>
+              <a href="insights.html" class="text-sm text-gray-400 hover:text-white transition-colors">Insights</a>
+            </li>
+            <li>
+              <a href="contact.html" class="text-sm text-gray-400 hover:text-white transition-colors">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-inter font-semibold text-white text-sm mb-4 tracking-wide">
+            LEGAL
+          </h4>
+          <ul class="space-y-3">
+            <li>
+              <a href="privacy-policy.html" class="text-sm text-gray-400 hover:text-white transition-colors">Privacy
+                Policy</a>
+            </li>
+            <li>
+              <a href="terms-and-service.html" class="text-sm text-gray-400 hover:text-white transition-colors">Terms of
+                Service</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-sm text-gray-400 font-inter mb-4 md:mb-0">
+          © 2024 Somah Group. All rights reserved.
+        </p>
+        <div class="flex space-x-6">
+          <a href="https://www.linkedin.com/company/uk-supply-chain-funding" target="_blank" rel="noopener noreferrer"
+            class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-linkedin text-lg"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white transition-colors"><i
+              class="fab fa-twitter text-lg"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Hamburger Menu Toggle
+    const hamburgerBtn = document.getElementById("hamburger-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const closeMenuBtn = document.getElementById("close-menu-btn");
+    const menuOverlay = document.getElementById("menu-overlay");
+
+    if (hamburgerBtn) {
+      hamburgerBtn.addEventListener("click", () => {
+        mobileMenu.classList.add("active");
+        menuOverlay.classList.add("active");
+      });
+    }
+
+    if (closeMenuBtn) {
+      closeMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("active");
+        menuOverlay.classList.remove("active");
+      });
+    }
+
+    if (menuOverlay) {
+      menuOverlay.addEventListener("click", () => {
+        mobileMenu.classList.remove("active");
+        menuOverlay.classList.remove("active");
+      });
+    }
+  </script>
+</body>
+
 </html>
