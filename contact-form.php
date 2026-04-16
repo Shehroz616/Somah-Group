@@ -1,43 +1,50 @@
 <?php
 
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
+require __DIR__ . '/vendor/autoload.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    // Your email
-    $youremail = "ta474232@mail.com";
+    $mail = new PHPMailer(true);
 
-    // Sanitize inputs
-    $name = htmlspecialchars(trim($_POST['name'] ?? ''));
-    $email = htmlspecialchars(trim($_POST['email'] ?? ''));
-    $company = htmlspecialchars(trim($_POST['company'] ?? ''));
-    $message = htmlspecialchars(trim($_POST['message'] ?? ''));
-    $topic = htmlspecialchars(trim($_POST['topic'] ?? ''));
+    try {
+        // ✅ SMTP settings
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'ta475232@gmail.com'; // tumhara gmail
+        $mail->Password = 'gogxtzvozofpiyrk';   // app password
+        $mail->SMTPSecure = 'ssl';
+        $mail->Port = 465;
 
-    // Validation
-    if (empty($name) || empty($email) || empty($company) || empty($message)) {
-        die("Please fill all required fields.");
-    }
+        // ✅ Form data
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $company = $_POST['company'];
+        $message = $_POST['message'];
+        $topic = $_POST['topic'];
 
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        die("Invalid email format.");
-    }
+        // ✅ Email settings
+        $mail->setFrom('ta475232@gmail.com', 'Website Contact');
+        $mail->addAddress('ta475232@gmail.com'); // jahan email receive karni hai
+        $mail->addReplyTo($email, $name);
 
-    // Email body
-    $body = "New Contact Form Submission:\n\n";
-    $body .= "Name: $name\n";
-    $body .= "Email: $email\n";
-    $body .= "Company: $company\n";
-    $body .= "Inquiry Type: $topic\n";
-    $body .= "Message:\n$message\n";
+        $mail->Subject = "New Inquiry from Website";
 
-    // Headers
-    $headers = "From: $youremail\r\n";
-    $headers .= "Reply-To: $email\r\n";
+        $mail->Body = "Name: $name\nEmail: $email\nCompany: $company\nTopic: $topic\nMessage:\n$message";
 
-    // Send mail
-    if (mail($youremail, "New Inquiry from Website", $body, $headers)) {
-        echo "<h2>Thank you! We will get back to you soon.</h2>";
-    } else {
-        echo "<h2>Something went wrong. Please try again.</h2>";
+        // ✅ Send
+        $mail->send();
+
+        echo "Thank you! We will get back to you soon.";
+
+    } catch (Exception $e) {
+        echo "Mailer Error: " . $mail->ErrorInfo;
     }
 }
 ?>
