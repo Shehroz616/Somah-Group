@@ -140,7 +140,7 @@
 
         <section id="contact-form-section" class="py-20">
             <div class="max-w-7xl mx-auto px-6 lg:px-12">
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+                <div class="grid grid-cols-1 lg:grid-cols-1 gap-16">
                     <div id="contact-form" class="lg:col-span-2">
                         <div id="form-container">
                             <form method="POST" action="contact-form.php" id="contact-form-element" class="space-y-8">
@@ -238,7 +238,7 @@
                         </div>
                     </div>
 
-                    <div id="contact-details" class="space-y-12">
+                    <!-- <div id="contact-details" class="space-y-12">
                         <div id="office-information">
                             <h3 class="font-playfair text-2xl font-medium text-gray-900 mb-6">Global Offices</h3>
                             <div class="space-y-8">
@@ -324,7 +324,7 @@
                                 24/7 institutional support available for existing clients
                             </p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -381,7 +381,7 @@
             <div class="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
                 <p class="text-sm text-gray-400 font-inter mb-4 md:mb-0">© 2024 Somah Group. All rights reserved.</p>
                 <div class="flex space-x-6">
-                    <a href="#" class="text-gray-400 hover:text-white transition-colors"><i
+                    <a href="https://www.linkedin.com/company/uk-supply-chain-funding" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors"><i
                             class="fab fa-linkedin text-lg"></i></a>
                     <a href="#" class="text-gray-400 hover:text-white transition-colors"><i
                             class="fab fa-twitter text-lg"></i></a>
@@ -402,10 +402,24 @@
             form.addEventListener('submit', function (e) {
                 e.preventDefault();
 
-                setTimeout(function () {
-                    form.classList.add('hidden');
-                    successMessage.classList.remove('hidden');
-                }, 500);
+                const formData = new FormData(form);
+
+                fetch('contact-form.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.text())
+                .then(data => {
+                    if (data.includes('Thank you')) {
+                        form.classList.add('hidden');
+                        successMessage.classList.remove('hidden');
+                    } else {
+                        alert('Error: ' + data);
+                    }
+                })
+                .catch(error => {
+                    alert('Error submitting form: ' + error);
+                });
             });
 
             submitAnotherBtn.addEventListener('click', function () {
