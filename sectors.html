@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Terms of Service - Somah Group</title>
+  <title>Sectors - Somah Group</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     window.FontAwesomeConfig = { autoReplaceSvg: "nest" };
@@ -20,18 +20,28 @@
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
     rel="stylesheet" />
   <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon" />
+
   <link rel="stylesheet" href="assets/css/style.css" />
   <style>
     ::-webkit-scrollbar {
       display: none;
     }
 
-    .terms-content h2 {
-      font-family: "Playfair Display", serif;
+    .hover-lift {
+      transition: transform 0.3s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.3s ease;
     }
 
-    .terms-content h3 {
-      font-family: "Inter", sans-serif;
+    .hover-lift:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    }
+
+    .sector-card {
+      transition: all 0.4s ease;
+    }
+
+    .sector-card:hover {
+      border-color: rgba(0, 0, 0, 0.8);
     }
   </style>
   <script>
@@ -61,8 +71,7 @@
           <a href="index.html" class="text-sm font-medium text-gray-500 hover:text-black transition-colors">Home</a>
           <a href="capability.html"
             class="text-sm font-medium text-gray-500 hover:text-black transition-colors">Capabilities</a>
-          <a href="sectors.html"
-            class="text-sm font-medium text-gray-500 hover:text-black transition-colors">Sectors</a>
+          <a href="sectors.html" class="text-sm font-medium text-black border-b-2 border-black pb-1">Sectors</a>
           <a href="partnerships.html"
             class="text-sm font-medium text-gray-500 hover:text-black transition-colors">Partnerships</a>
           <a href="insights.html"
@@ -131,140 +140,183 @@
   </header>
 
   <main>
-    <section class="py-16 border-b border-gray-200 bg-black text-white">
-      <div class="max-w-7xl mx-auto px-6 lg:px-12">
-        <div class="max-w-3xl">
-          <span class="text-sm font-medium text-gray-300 tracking-wide">LEGAL</span>
-          <h1 class="font-playfair text-5xl md:text-6xl font-medium mt-4 mb-6">
-            Terms of Service
+    <!-- Hero Section -->
+    <section id="hero" class="py-24 md:py-32 bg-black text-white relative overflow-hidden">
+      <div
+        class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center">
+      </div>
+      <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-20">
+        <div class="max-w-4xl">
+          <h1 class="font-playfair text-5xl md:text-7xl font-medium leading-tight mb-8">
+            Sector Focus
           </h1>
-          <div class="w-16 h-px bg-white mb-8"></div>
-          <p class="text-lg text-gray-400">Last updated: April 16, 2026</p>
+          <div class="w-24 h-px bg-white/30 mb-8"></div>
+          <p class="text-xl md:text-2xl text-gray-300 font-light max-w-2xl leading-relaxed mb-6">
+            Specialized solutions tailored for the unique challenges of your industry.
+          </p>
+          <p class="text-sm text-gray-500 italic">"The objective is not to complete a transaction — it is to place
+            clients with the right long-term solution."</p>
         </div>
       </div>
     </section>
 
-    <section class="terms-content py-20 max-w-7xl mx-auto px-6 lg:px-12">
-      <div class="max-w-4xl mx-auto px-6 lg:px-12 prose prose-gray max-w-none leading-relaxed">
-        <h2 class="text-3xl font-medium mb-8">1. Introduction</h2>
-        <p class="mb-8">
-          Welcome to Somah Group. These Terms of Service ("Terms") govern your
-          access to and use of our website (somahgroup.com and associated
-          pages) and any information or services you obtain from us.
-        </p>
-        <p class="mb-12">
-          By accessing or using our website, you agree to be bound by these
-          Terms. If you do not agree, please do not use our website.
-        </p>
+    <!-- Sectors Grid -->
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
 
-        <h2 class="text-3xl font-medium mb-6">2. Our Services</h2>
-        <p class="mb-6">
-          Somah Group operates as a capital markets intermediary. We connect
-          institutional clients and businesses with carefully selected
-          providers of foreign exchange (FX), structured hedging, commercial &
-          trade finance, and emerging markets cross-border liquidity
-          solutions.
-        </p>
-        <p class="mb-12">
-          We do not provide financial advice, execute trades ourselves, or act
-          as a broker-dealer. All transactions are conducted directly between
-          you and the relevant third-party provider.
-        </p>
+          <!-- Importers & Distributors -->
+          <div class="sector-card border border-gray-100 p-10 bg-gray-50/30 flex flex-col h-full">
+            <div class="mb-8">
+              <div class="w-14 h-14 bg-black text-white flex items-center justify-center rounded mb-6">
+                <i class="fas fa-truck-loading text-xl"></i>
+              </div>
+              <h3 class="font-playfair text-3xl font-medium mb-6">Importers & Distributors</h3>
+              <div class="space-y-6">
+                <div>
+                  <h4 class="text-xs font-bold tracking-widest text-gray-400 uppercase mb-3">The Pain</h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start gap-3 text-sm">
+                      <i class="fas fa-exclamation-circle text-red-500 mt-1"></i>
+                      <span>Paying suppliers before getting paid</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-sm">
+                      <i class="fas fa-exclamation-circle text-red-500 mt-1"></i>
+                      <span>FX cost eating into margin</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pt-4 border-t border-gray-200/50">
+                  <h4 class="text-xs font-bold tracking-widest text-black uppercase mb-3">Our Solution</h4>
+                  <p class="text-gray-600 text-sm leading-relaxed">
+                    FX pricing + trade finance + liquidity support
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <h2 class="text-3xl font-medium mb-6">3. No Financial Advice</h2>
-        <p class="mb-12">
-          The information on this website is for general informational
-          purposes only and does not constitute financial, investment, legal,
-          or tax advice. Any decision to engage in FX, hedging, or financing
-          activities should be based on your own independent assessment and
-          consultation with qualified professionals.
-        </p>
+          <!-- Manufacturing -->
+          <div class="sector-card border border-gray-100 p-10 bg-gray-50/30 flex flex-col h-full">
+            <div class="mb-8">
+              <div class="w-14 h-14 bg-black text-white flex items-center justify-center rounded mb-6">
+                <i class="fas fa-industry text-xl"></i>
+              </div>
+              <h3 class="font-playfair text-3xl font-medium mb-6">Manufacturing</h3>
+              <div class="space-y-6">
+                <div>
+                  <h4 class="text-xs font-bold tracking-widest text-gray-400 uppercase mb-3">The Pain</h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start gap-3 text-sm">
+                      <i class="fas fa-exclamation-circle text-red-500 mt-1"></i>
+                      <span>Raw material volatility</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-sm">
+                      <i class="fas fa-exclamation-circle text-red-500 mt-1"></i>
+                      <span>Tight margins</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pt-4 border-t border-gray-200/50">
+                  <h4 class="text-xs font-bold tracking-widest text-black uppercase mb-3">Our Solution</h4>
+                  <p class="text-gray-600 text-sm leading-relaxed">
+                    Hedging + funding + pricing efficiency
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <h2 class="text-3xl font-medium mb-6">4. User Responsibilities</h2>
-        <ul class="list-disc pl-6 mb-12 space-y-3 text-gray-700">
-          <li>
-            You must provide accurate, current, and complete information when
-            submitting inquiries.
-          </li>
-          <li>
-            You agree not to use our website for any unlawful purpose or in
-            violation of applicable laws and regulations.
-          </li>
-          <li>
-            You are responsible for maintaining the confidentiality of any
-            information you share with us.
-          </li>
-        </ul>
+          <!-- Consumer Goods -->
+          <div class="sector-card border border-gray-100 p-10 bg-gray-50/30 flex flex-col h-full">
+            <div class="mb-8">
+              <div class="w-14 h-14 bg-black text-white flex items-center justify-center rounded mb-6">
+                <i class="fas fa-shopping-basket text-xl"></i>
+              </div>
+              <h3 class="font-playfair text-3xl font-medium mb-6">Consumer Goods</h3>
+              <div class="space-y-6">
+                <div>
+                  <h4 class="text-xs font-bold tracking-widest text-gray-400 uppercase mb-3">The Pain</h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start gap-3 text-sm">
+                      <i class="fas fa-exclamation-circle text-red-500 mt-1"></i>
+                      <span>Margin pressure</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-sm">
+                      <i class="fas fa-exclamation-circle text-red-500 mt-1"></i>
+                      <span>Supply chain dependency</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <h2 class="text-3xl font-medium mb-6">5. Intellectual Property</h2>
-        <p class="mb-12">
-          All content on this website, including text, images, logos, and
-          design elements, is the property of Somah Group or its licensors and
-          is protected by copyright and trademark laws. You may not reproduce,
-          distribute, or create derivative works without our prior written
-          consent.
-        </p>
+          <!-- Technology & SaaS -->
+          <div class="sector-card border border-gray-100 p-10 bg-gray-50/30 flex flex-col h-full">
+            <div class="mb-8">
+              <div class="w-14 h-14 bg-black text-white flex items-center justify-center rounded mb-6">
+                <i class="fas fa-laptop-code text-xl"></i>
+              </div>
+              <h3 class="font-playfair text-3xl font-medium mb-6">Technology & SaaS</h3>
+              <div class="space-y-6">
+                <div>
+                  <h4 class="text-xs font-bold tracking-widest text-gray-400 uppercase mb-3">The Pain</h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start gap-3 text-sm">
+                      <i class="fas fa-exclamation-circle text-red-500 mt-1"></i>
+                      <span>FX leakage on revenue conversion</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <h2 class="text-3xl font-medium mb-6">
-          6. Third-Party Links and Services
-        </h2>
-        <p class="mb-12">
-          Our website may contain links to third-party websites or services.
-          We are not responsible for the content, privacy practices, or
-          availability of those external sites. Any engagement with
-          third-party providers is solely at your own risk and subject to
-          their terms and conditions.
-        </p>
+          <!-- Africa-linked Businesses -->
+          <div class="sector-card border border-gray-100 p-10 bg-gray-50/30 flex flex-col h-full md:col-span-2">
+            <div class="mb-8 max-w-2xl">
+              <div class="w-14 h-14 bg-black text-white flex items-center justify-center rounded mb-6">
+                <i class="fas fa-globe-africa text-xl"></i>
+              </div>
+              <h3 class="font-playfair text-3xl font-medium mb-6">Africa-Linked Businesses</h3>
+              <div class="space-y-6">
+                <div>
+                  <h4 class="text-xs font-bold tracking-widest text-gray-400 uppercase mb-3">The Pain</h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start gap-3 text-sm">
+                      <i class="fas fa-exclamation-circle text-red-500 mt-1"></i>
+                      <span>Liquidity bottlenecks</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-sm">
+                      <i class="fas fa-exclamation-circle text-red-500 mt-1"></i>
+                      <span>Settlement delays</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <h2 class="text-3xl font-medium mb-6">7. Limitation of Liability</h2>
-        <p class="mb-12">
-          To the fullest extent permitted by law, Somah Group shall not be
-          liable for any indirect, incidental, special, consequential, or
-          punitive damages arising out of or related to your use of this
-          website or any services introduced through us.
-        </p>
+        </div>
+      </div>
+    </section>
 
-        <h2 class="text-3xl font-medium mb-6">8. Disclaimer of Warranties</h2>
-        <p class="mb-12">
-          The website is provided on an "as is" and "as available" basis
-          without any warranties of any kind, whether express or implied. We
-          do not guarantee that the website will be uninterrupted, error-free,
-          or free of viruses.
-        </p>
-
-        <h2 class="text-3xl font-medium mb-6">9. Indemnification</h2>
-        <p class="mb-12">
-          You agree to indemnify and hold Somah Group, its officers,
-          directors, employees, and agents harmless from any claims,
-          liabilities, damages, losses, and expenses arising from your use of
-          the website or violation of these Terms.
-        </p>
-
-        <h2 class="text-3xl font-medium mb-6">10. Governing Law</h2>
-        <p class="mb-12">
-          These Terms shall be governed by and construed in accordance with
-          the laws of the State of New York, United States, without regard to
-          conflict of law principles. Any disputes shall be resolved
-          exclusively in the courts located in New York County, New York.
-        </p>
-
-        <h2 class="text-3xl font-medium mb-6">11. Changes to These Terms</h2>
-        <p class="mb-12">
-          We reserve the right to modify these Terms at any time. We will post
-          the updated version on this page with a revised "Last updated" date.
-          Your continued use of the website after any changes constitutes
-          acceptance of the new Terms.
-        </p>
-
-        <h2 class="text-3xl font-medium mb-6">12. Contact Us</h2>
-        <p class="mb-6">
-          If you have any questions about these Terms of Service, please
-          contact us at:
-        </p>
-        <div class="mt-6 p-6 bg-gray-50 border border-gray-200 rounded-lg">
-          <p class="font-medium">Somah Group</p>
-          <p>institutional@somahgroup.com</p>
-          <p>New York • London • Singapore</p>
+    <!-- CTA Section -->
+    <section id="cta-section" class="py-24 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="bg-black px-12 py-20 text-center">
+          <h2 class="font-playfair text-4xl md:text-5xl font-medium text-white mb-6">
+            Industry-Specific Strategy
+          </h2>
+          <div class="w-16 h-px bg-white mx-auto mb-8"></div>
+          <p class="font-inter text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
+            Our team understands the nuances of your sector. Let's discuss a strategy that protects your margins and
+            fuels growth.
+          </p>
+          <a href="contact.html"
+            class="bg-white text-black px-10 py-4 text-sm font-medium tracking-wide hover:bg-gray-100 transition-colors uppercase">BOOK
+            A CONSULTATION</a>
         </div>
       </div>
     </section>
