@@ -1,15 +1,27 @@
 .img-float {
   position: fixed;
-  width: 280px; height: 180px;
-  border-radius: 6px; overflow: hidden;
-  pointer-events: none; opacity: 0;
+  width: 280px;
+  height: 180px;
+  border-radius: 6px;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0;
   transform: scale(0.9) rotate(-2deg);
-  transition: opacity 0.3s ease, transform 0.35s cubic-bezier(0.23,1,0.32,1);
+  transition: opacity 0.3s ease, transform 0.35s cubic-bezier(0.23, 1, 0.32, 1);
   z-index: 9999;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
-.img-float.visible { opacity: 1; transform: scale(1) rotate(0deg); }
-.img-float img { width: 100%; height: 100%; object-fit: cover; }
+
+.img-float.visible {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+.img-float img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /* Mobile Menu Styles */
 #mobile-menu.active {
@@ -19,4 +31,8 @@
 #menu-overlay.active {
   opacity: 1;
   visibility: visible;
+}
+
+.text-white {
+  color: #fff;
 }

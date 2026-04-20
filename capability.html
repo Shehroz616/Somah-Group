@@ -1,378 +1,645 @@
 <!doctype html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capabilities Overview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      window.FontAwesomeConfig = { autoReplaceSvg: "nest" };
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.svg"
+      type="image/x-icon"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Capabilities Overview</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    window.FontAwesomeConfig = { autoReplaceSvg: "nest" };
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"
-    referrerpolicy="no-referrer"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
-    rel="stylesheet" />
-  <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon" />
-
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <style>
-    ::-webkit-scrollbar {
-      display: none;
-    }
-  </style>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            playfair: ["Playfair Display", "serif"],
-            inter: ["Inter", "sans-serif"],
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              playfair: ["Playfair Display", "serif"],
+              inter: ["Inter", "sans-serif"],
+            },
           },
         },
-      },
-    };
-  </script>
-</head>
+      };
+    </script>
+  </head>
 
-<body class="font-inter bg-white text-black">
-  <header id="header" class="border-b border-gray-200">
-    <div class="max-w-7xl mx-auto px-6 lg:px-12">
-      <div class="flex items-center justify-between h-20">
-        <div class="flex items-center">
-          <div class="font-playfair text-2xl font-semibold tracking-tight">
-            <a href="index.html"><img src="assets/img/black-logo.jpeg" class="w-36" alt="" /></a>
+  <body class="font-inter bg-white text-black">
+    <header id="header" class="border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="flex items-center justify-between h-20">
+          <div class="flex items-center">
+            <div class="font-playfair text-2xl font-semibold tracking-tight">
+              <a href="index.html"
+                ><img src="assets/img/black-logo.jpeg" class="w-36" alt=""
+              /></a>
+            </div>
           </div>
-        </div>
-        <nav class="hidden lg:flex items-center space-x-10">
-          <a href="index.html" class="text-sm font-medium text-gray-500 hover:text-black transition-colors">Home</a>
-          <a href="capability.html" class="text-sm font-medium text-black border-b-2 border-black pb-1">Capabilities</a>
+          <nav class="hidden lg:flex items-center space-x-10">
+            <a
+              href="index.html"
+              class="text-sm font-medium text-gray-500 hover:text-black transition-colors"
+              >Home</a
+            >
+            <a
+              href="capability.html"
+              class="text-sm font-medium text-black border-b-2 border-black pb-1"
+              >Capabilities</a
+            >
 
-          <a href="partnerships.html"
-            class="text-sm font-medium text-gray-500 hover:text-black transition-colors">Partnerships</a>
-          <a href="faq.html" class="text-sm font-medium text-gray-500 hover:text-black transition-colors">FAQ</a>
-          <a href="about-us.html" class="text-sm font-medium text-gray-500 hover:text-black transition-colors">About
-            Us</a>
-          <a href="contact.html"
-            class="text-sm font-medium text-gray-500 hover:text-black transition-colors">Contact</a>
-        </nav>
-        <button id="hamburger-btn" class="lg:hidden text-black relative">
-          <i class="fas fa-bars text-xl"></i>
-        </button>
-      </div>
-    </div>
-
-    <!-- Mobile Menu -->
-    <nav id="mobile-menu"
-      class="fixed top-0 right-0 h-screen w-64 bg-black text-white transform translate-x-full transition-transform duration-300 ease-in-out z-40 lg:hidden">
-      <div class="flex flex-col h-full">
-        <div class="flex items-center justify-between px-6 py-6 border-b border-gray-700">
-          <span class="text-lg font-semibold">Menu</span>
-          <button id="close-menu-btn" class="text-white">
-            <i class="fas fa-times text-xl"></i>
+            <a
+              href="partnerships.html"
+              class="text-sm font-medium text-gray-500 hover:text-black transition-colors"
+              >Partnerships</a
+            >
+            <a
+              href="faq.html"
+              class="text-sm font-medium text-gray-500 hover:text-black transition-colors"
+              >FAQ</a
+            >
+            <a
+              href="about-us.html"
+              class="text-sm font-medium text-gray-500 hover:text-black transition-colors"
+              >About Us</a
+            >
+            <a
+              href="contact.html"
+              class="text-sm font-medium text-gray-500 hover:text-black transition-colors"
+              >Contact</a
+            >
+          </nav>
+          <button id="hamburger-btn" class="lg:hidden text-black relative">
+            <i class="fas fa-bars text-xl"></i>
           </button>
         </div>
-        <div class="flex-1 overflow-y-auto">
-          <ul class="flex flex-col space-y-0">
-            <li>
-              <a href="index.html"
-                class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors">Home</a>
-            </li>
-            <li>
-              <a href="capability.html"
-                class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors">Capabilities</a>
-            </li>
-
-            <li>
-              <a href="partnerships.html"
-                class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors">Partnerships</a>
-            </li>
-            <li>
-              <a href="faq.html" class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors">FAQ</a>
-            </li>
-            <li>
-              <a href="about-us.html"
-                class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors">About
-                Us</a>
-            </li>
-            <li>
-              <a href="contact.html"
-                class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors">Contact</a>
-            </li>
-          </ul>
-        </div>
       </div>
-    </nav>
 
-    <!-- Mobile Menu Overlay -->
-    <div id="menu-overlay"
-      class="fixed inset-0 bg-black bg-opacity-50 opacity-0 invisible transition-all duration-300 ease-in-out z-30 lg:hidden">
-    </div>
-  </header>
-
-  <main>
-    <section id="page-intro" class="py-16 border-b border-gray-200 bg-black">
-      <div class="max-w-7xl mx-auto px-6 lg:px-12">
-        <div class="max-w-3xl">
-          <h1 class="font-playfair text-5xl md:text-6xl font-medium text-white mb-6">
-            Our Capabilities
-          </h1>
-          <div class="w-16 h-px bg-gray-900 mb-8"></div>
-          <p class="font-inter text-lg text-gray-400 leading-relaxed">
-            We provide access to a curated network of institutional providers across three core areas. Each engagement
-            is driven by a specific commercial need — pricing, liquidity, speed or structure.
-          </p>
-        </div>
-      </div>
-    </section>
-    <div class="grid grid-cols-1 md:grid-cols-12 max-w-7xl mx-auto mt-12">
-      <!-- Pillar 1: Corporate FX -->
-      <section class="md:col-span-12 lg:col-span-7 p-12 lg:p-20 group relative overflow-hidden bg-gray-100">
-        <div class="relative z-10">
-          <p class="font-sans tracking-widest uppercase text-xs font-medium text-primary mb-12">
-            Pillar 01
-          </p>
-          <h2 class="text-4xl font-light mb-8">
-            CORPORATE FX & STRUCTURED HEDGING
-          </h2>
-          <p class="font-body text-lg text-on-surface-variant leading-relaxed mb-12 max-w-xl">
-            Enterprise-level execution across spot, forwards and structured
-            hedging solutions designed to reduce cost, protect margins and
-            improve treasury outcomes.
-          </p>
-          <ul class="space-y-4 mb-16 font-body text-sm text-secondary uppercase tracking-wider">
-            <li class="flex items-center gap-3">
-              <span class="w-1.5 h-1.5 bg-primary"></span> Risk Advisory &amp;
-              Audit
-            </li>
-            <li class="flex items-center gap-3">
-              <span class="w-1.5 h-1.5 bg-primary"></span> Multi-Currency
-              Settlement
-            </li>
-            <li class="flex items-center gap-3">
-              <span class="w-1.5 h-1.5 bg-primary"></span> Forward Contract
-              Architecture
-            </li>
-          </ul>
-          <a class="inline-flex items-center gap-4 text-xs font-bold uppercase tracking-[0.3em] group-hover:gap-6 transition-all duration-300"
-            href="corporate-fx.html">
-            Explore FX Solutions <i class="fas fa-arrow-right text-sm"></i>
-          </a>
-        </div>
-      </section>
-      <!-- Pillar 2: Commercial Finance -->
-      <section class="md:col-span-6 lg:col-span-5 p-12 lg:p-20 flex flex-col justify-between bg-black">
-        <div>
-          <p class="font-sans tracking-widest uppercase text-xs font-medium text-primary mb-12 text-gray-400">
-            Pillar 02
-          </p>
-          <h2 class="text-4xl text-white mb-8">COMMERCIAL & TRADE FINANCE</h2>
-          <p class="font-body text-base text-on-surface-variant leading-relaxed mb-8 text-gray-400">
-            Access to working capital, revolving credit and transaction-led
-            funding solutions supporting supplier payments, cashflow gaps and
-            business growth.
-          </p>
-        </div>
-        <div class="mt-12">
-          <div class="mb-12 h-[200px] bg-surface relative overflow-hidden">
-            <img class="w-full h-full object-cover grayscale opacity-80"
-              data-alt="Modern architectural detail of a glass skyscraper reflecting the sky in a clean high-contrast black and white style"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5-p9JPqx7d40L6uZYS2tpLr-XTzqHR0VucHzkdzJryvj7HJdNEdJ5I69rakI04nri0YtYgj5l77wQ7pOXsPTlOly8x39LKGutG_bPU5N3vV6gybzBige4070Jan9BQX8rHwB_Hpaq8p_xxp-Wsc-1xi0mQtH3sOQgcL1UZLmppCNq7L-jbvnHahP4vO5jB9B32TPo2FKasSE_hchymedftuhQ137GOK9C5KoQZphrCj7TCzsDGQ2HlytkxhGeDGRPpP88kmESBg" />
+      <!-- Mobile Menu -->
+      <nav
+        id="mobile-menu"
+        class="fixed top-0 right-0 h-screen w-64 bg-black text-white transform translate-x-full transition-transform duration-300 ease-in-out z-40 lg:hidden"
+      >
+        <div class="flex flex-col h-full">
+          <div
+            class="flex items-center justify-between px-6 py-6 border-b border-gray-700"
+          >
+            <span class="text-lg font-semibold">Menu</span>
+            <button id="close-menu-btn" class="text-white">
+              <i class="fas fa-times text-xl"></i>
+            </button>
           </div>
-          <a class="inline-flex items-center gap-4 text-xs font-bold uppercase tracking-[0.3em] text-gray-200"
-            href="commercial-finance.html">
-            View Structures <i class="fas fa-arrow-right text-sm"></i>
-          </a>
+          <div class="flex-1 overflow-y-auto">
+            <ul class="flex flex-col space-y-0">
+              <li>
+                <a
+                  href="index.html"
+                  class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="capability.html"
+                  class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors"
+                  >Capabilities</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="partnerships.html"
+                  class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors"
+                  >Partnerships</a
+                >
+              </li>
+              <li>
+                <a
+                  href="faq.html"
+                  class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors"
+                  >FAQ</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about-us.html"
+                  class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu Overlay -->
+      <div
+        id="menu-overlay"
+        class="fixed inset-0 bg-black bg-opacity-50 opacity-0 invisible transition-all duration-300 ease-in-out z-30 lg:hidden"
+      ></div>
+    </header>
+
+    <main>
+      <section id="page-intro" class="py-16 border-b border-gray-200 bg-black">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+          <div class="max-w-3xl">
+            <h1
+              class="font-playfair text-5xl md:text-6xl font-medium text-white mb-6"
+            >
+              Our Capabilities
+            </h1>
+            <div class="w-16 h-px bg-gray-900 mb-8"></div>
+            <p class="font-inter text-lg text-gray-400 leading-relaxed">
+              We provide tailored access across three core areas: Corporate FX &
+              Advanced Structured Hedging, Commercial & Trade Finance, and
+              Emerging Markets Cross-Border Liquidity.
+            </p>
+          </div>
         </div>
       </section>
-      <!-- Pillar 3: Emerging Markets -->
+      <div class="grid grid-cols-1 md:grid-cols-12 max-w-7xl mx-auto mt-12">
+        <!-- Pillar 1: Corporate FX -->
+        <section
+          class="md:col-span-12 lg:col-span-7 p-12 lg:p-20 group relative overflow-hidden bg-gray-100"
+        >
+          <div class="relative z-10">
+            <p
+              class="font-sans tracking-widest uppercase text-xs font-medium text-primary mb-12"
+            >
+              Pillar 01
+            </p>
+            <h2 class="text-4xl font-light mb-8">
+              CORPORATE FX & STRUCTURED HEDGING
+            </h2>
+            <p
+              class="font-body text-lg text-on-surface-variant leading-relaxed mb-12 max-w-xl"
+            >
+              Enterprise-led foreign exchange solutions across spot, forwards
+              and structured hedging, designed to improve pricing, protect
+              margins and strengthen treasury outcomes.
+            </p>
+            <ul
+              class="space-y-4 mb-16 font-body text-sm text-secondary uppercase tracking-wider"
+            >
+              <li class="flex items-center gap-3">
+                <span class="w-1.5 h-1.5 bg-primary"></span> WORKING CAPITAL
+                STRUCTURING
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-1.5 h-1.5 bg-primary"></span> TRADE & SUPPLY
+                CHAIN FINANCE
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-1.5 h-1.5 bg-primary"></span> UNSECURED REVOLVING
+                CREDIT ACCESS
+              </li>
+            </ul>
+            <a
+              class="inline-flex items-center gap-4 text-xs font-bold uppercase tracking-[0.3em] group-hover:gap-6 transition-all duration-300"
+              href="corporate-fx.html"
+            >
+              Explore FX Solutions <i class="fas fa-arrow-right text-sm"></i>
+            </a>
+          </div>
+        </section>
+        <!-- Pillar 2: Commercial Finance -->
+        <section
+          class="md:col-span-6 lg:col-span-5 p-12 lg:p-20 flex flex-col justify-between bg-black"
+        >
+          <div>
+            <p
+              class="font-sans tracking-widest uppercase text-xs font-medium text-primary mb-12 text-gray-400"
+            >
+              Pillar 02
+            </p>
+            <h2 class="text-4xl text-white mb-8">COMMERCIAL & TRADE FINANCE</h2>
+            <p
+              class="font-body text-base text-on-surface-variant leading-relaxed mb-8 text-gray-400"
+            >
+              Access to working capital, revolving credit and transaction-led
+              funding solutions supporting supplier payments, cashflow gaps and
+              business growth.
+            </p>
+          </div>
+          <div class="mt-12">
+            <div class="mb-12 bg-surface relative overflow-hidden">
+              <ul
+                class="space-y-4 mb-6 font-body text-sm text-secondary uppercase tracking-wider"
+              >
+                <li class="flex items-center gap-3 text-white">
+                  <span class="w-1.5 h-1.5 bg-primary"></span>
+                  WORKING CAPITAL STRUCTURING
+                </li>
+                <li class="flex items-center gap-3 text-white">
+                  <span class="w-1.5 h-1.5 bg-primary"></span> TRADE & SUPPLY
+                  CHAIN FINANCE
+                </li>
+                <li class="flex items-center gap-3 text-white">
+                  <span class="w-1.5 h-1.5 bg-primary"></span>
+                  UNSECURED REVOLVING CREDIT ACCESS
+                </li>
+              </ul>
+            </div>
+            <a
+              class="inline-flex items-center gap-4 text-xs font-bold uppercase tracking-[0.3em] text-gray-200"
+              href="commercial-finance.html"
+            >
+              View Structures <i class="fas fa-arrow-right text-sm"></i>
+            </a>
+          </div>
+        </section>
+        <!-- Pillar 3: Emerging Markets -->
+        <section
+          class="order-4 md:order-3 md:col-span-12 p-12 lg:p-20 flex flex-col justify-between bg-gray-100 border-t border-white"
+        >
+          <div>
+            <p
+              class="font-sans tracking-widest uppercase text-xs font-medium text-primary mb-12 text-gray-600"
+            >
+              Pillar 03
+            </p>
+            <h2 class="text-4xl font-light mb-8 text-black">
+              EMERGING MARKETS LIQUIDITY
+            </h2>
+            <p
+              class="font-body text-base text-on-surface-variant leading-relaxed mb-8 text-gray-400"
+            >
+              Direct access to liquidity pathways across restricted and complex
+              currency corridors, with a focus on African markets.
+            </p>
+          </div>
+          <div class="mt-12">
+            <div class="mb-12 space-y-6">
+              <div
+                class="border-b border-on-surface/10 pb-4 flex justify-between items-end"
+              >
+                <span
+                  class="text-xs uppercase tracking-widest text-secondary text-gray-400"
+                  >LOCAL TO G7 CONVERSION</span
+                >
+              </div>
+              <div
+                class="border-b border-on-surface/10 pb-4 flex justify-between items-end"
+              >
+                <span
+                  class="text-xs uppercase tracking-widest text-secondary text-gray-400"
+                  >G7 TO LOCAL CURRENCY ACCESS</span
+                >
+              </div>
+              <div
+                class="border-b border-on-surface/10 pb-4 flex justify-between items-end"
+              >
+                <span
+                  class="text-xs uppercase tracking-widest text-secondary text-gray-400"
+                  >CROSS-BORDER LIQUIDITY PATHWAYS</span
+                >
+              </div>
+            </div>
+            <a
+              class="inline-flex items-center gap-4 text-xs font-bold uppercase tracking-[0.3em] text-black"
+              href="emerging-liquidity.html"
+            >
+              Analyze Markets <i class="fas fa-arrow-right text-sm"></i>
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <!-- Network Strength Section -->
       <section
-        class="order-4 md:order-3 md:col-span-12 p-12 lg:p-20 flex flex-col justify-between bg-gray-100 border-t border-white">
-        <div>
-          <p class="font-sans tracking-widest uppercase text-xs font-medium text-primary mb-12 text-gray-600">
-            Pillar 03
-          </p>
-          <h2 class="text-4xl font-light mb-8 text-black">
-            EMERGING MARKETS LIQUIDITY
-          </h2>
-          <p class="font-body text-base text-on-surface-variant leading-relaxed mb-8 text-gray-400">
-            Direct access to liquidity pathways across restricted and complex
-            currency corridors, with a focus on African markets.
-          </p>
-        </div>
-        <div class="mt-12">
-          <div class="mb-12 space-y-6">
-            <div class="border-b border-on-surface/10 pb-4 flex justify-between items-end">
-              <span class="text-xs uppercase tracking-widest text-secondary text-gray-400">Territory Access</span>
-              <span class="font-headline italic text-xl text-black">Global South</span>
-            </div>
-            <div class="border-b border-on-surface/10 pb-4 flex justify-between items-end">
-              <span class="text-xs uppercase tracking-widest text-secondary text-gray-400">Market Intel</span>
-              <span class="font-headline italic text-xl text-black">Proprietary</span>
-            </div>
+        id="network-strength"
+        class="py-20 bg-white border-t border-gray-200"
+      >
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+          <div class="max-w-3xl mx-auto text-center mb-12">
+            <h2 class="font-playfair text-4xl md:text-5xl font-medium mb-4">
+              NETWORK STRENGTH
+            </h2>
+            <div class="w-16 h-px bg-black mx-auto mb-6"></div>
+            <p class="font-inter text-lg text-gray-700">
+              Across our partner network:
+            </p>
           </div>
-          <a class="inline-flex items-center gap-4 text-xs font-bold uppercase tracking-[0.3em] text-black"
-            href="emerging-liquidity.html">
-            Analyze Markets <i class="fas fa-arrow-right text-sm"></i>
-          </a>
+
+          <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+            <ul class="space-y-4">
+              <li class="flex items-start gap-4">
+                <div
+                  class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="fas fa-coins text-sm"></i>
+                </div>
+                <span class="font-inter text-base text-gray-700"
+                  >150+ currencies supported - Multi-billion annual FX
+                  volume</span
+                >
+              </li>
+              <li class="flex items-start gap-4">
+                <div
+                  class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="fas fa-briefcase text-sm"></i>
+                </div>
+                <span class="font-inter text-base text-gray-700"
+                  >$200B+ receivables & trade finance assets</span
+                >
+              </li>
+            </ul>
+
+            <ul class="space-y-4">
+              <li class="flex items-start gap-4">
+                <div
+                  class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="fas fa-globe text-sm"></i>
+                </div>
+                <span class="font-inter text-base text-gray-700"
+                  >SWIFT / SEPA / Faster Payments infrastructure</span
+                >
+              </li>
+              <li class="flex items-start gap-4">
+                <div
+                  class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="fas fa-handshake text-sm"></i>
+                </div>
+                <span class="font-inter text-base text-gray-700"
+                  >FCA regulated & compliant infrastructure</span
+                >
+              </li>
+              <li class="flex items-start gap-4">
+                <div
+                  class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="fas fa-handshake text-sm"></i>
+                </div>
+                <span class="font-inter text-base text-gray-700"
+                  >Backed by tier-1 institutional capital (including JP Morgan &
+                  Blackstone-backed platforms)</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="max-w-3xl mx-auto text-center mt-10">
+            <p class="font-inter text-lg text-gray-700">
+              Clients benefit from this combined infrastructure without needing
+              to build it internally.
+            </p>
+          </div>
         </div>
       </section>
-    </div>
 
-    <!-- Network Strength Section -->
-    <section id="network-strength" class="py-20 bg-white border-t border-gray-200">
-      <div class="max-w-7xl mx-auto px-6 lg:px-12">
-        <div class="max-w-3xl mx-auto text-center mb-12">
-          <h2 class="font-playfair text-4xl md:text-5xl font-medium mb-4">
-            NETWORK STRENGTH
-          </h2>
-          <div class="w-16 h-px bg-black mx-auto mb-6"></div>
-          <p class="font-inter text-lg text-gray-700">
-            Across our partner network:
-          </p>
-        </div>
-
-        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-          <ul class="space-y-4">
-            <li class="flex items-start gap-4">
-              <div class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center flex-shrink-0">
-                <i class="fas fa-coins text-sm"></i>
-              </div>
-              <span class="font-inter text-base text-gray-700">Multi-billion annual FX volume</span>
-            </li>
-            <li class="flex items-start gap-4">
-              <div class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center flex-shrink-0">
-                <i class="fas fa-briefcase text-sm"></i>
-              </div>
-              <span class="font-inter text-base text-gray-700">Decades of institutional market experience</span>
-            </li>
-          </ul>
-
-          <ul class="space-y-4">
-            <li class="flex items-start gap-4">
-              <div class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center flex-shrink-0">
-                <i class="fas fa-globe text-sm"></i>
-              </div>
-              <span class="font-inter text-base text-gray-700">Access to G7 and emerging market currencies</span>
-            </li>
-            <li class="flex items-start gap-4">
-              <div class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center flex-shrink-0">
-                <i class="fas fa-handshake text-sm"></i>
-              </div>
-              <span class="font-inter text-base text-gray-700">Established liquidity providers, lenders and execution
-                partners</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="max-w-3xl mx-auto text-center mt-10">
-          <p class="font-inter text-lg text-gray-700">
-            Clients benefit from this combined infrastructure without needing
-            to build it internally.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="cta-section" class="py-24">
-      <div class="max-w-7xl mx-auto px-6 lg:px-12">
-        <div class="bg-black px-12 py-20 text-center">
-          <h2 class="font-playfair text-4xl md:text-5xl font-medium text-white mb-6">
-            Explore Our Solutions in Detail
-          </h2>
-          <div class="w-16 h-px bg-white mx-auto mb-8"></div>
-          <p class="font-inter text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
-            Connect with our institutional team to discuss tailored solutions
-            for your organization.
-          </p>
-          <a href="contact.html"
-            class="inline-flex items-center justify-center px-10 py-4 bg-white text-black text-sm font-medium tracking-wide hover:bg-gray-100 transition-colors">
-            SCHEDULE A CONSULTATION
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer id="footer" class="border-t border-gray-200 py-12 bg-black text-white">
-    <div class="max-w-7xl mx-auto px-6 lg:px-12">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-        <div class="md:col-span-1">
-          <div class="font-playfair font-semibold tracking-tight mb-4">
-            <img src="assets/img/white-logo.jpeg" class="w-36" alt="Somah Group" />
+      <section id="cta-section" class="py-24">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+          <div class="bg-black px-12 py-20 text-center">
+            <h2
+              class="font-playfair text-4xl md:text-5xl font-medium text-white mb-6"
+            >
+              Explore Our Solutions in Detail
+            </h2>
+            <div class="w-16 h-px bg-white mx-auto mb-8"></div>
+            <p class="font-inter text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
+              Connect with our institutional team to discuss tailored solutions
+              for your organization.
+            </p>
+            <a
+              href="contact.html"
+              class="inline-flex items-center justify-center px-10 py-4 bg-white text-black text-sm font-medium tracking-wide hover:bg-gray-100 transition-colors"
+            >
+              SCHEDULE A CONSULTATION
+            </a>
           </div>
-          <p class="text-sm text-gray-400 font-inter">
-            Institutional capital markets solutions for a connected world.
+        </div>
+      </section>
+    </main>
+
+    <footer
+      id="footer"
+      class="border-t border-gray-200 py-12 bg-black text-white"
+    >
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+          <div class="md:col-span-1">
+            <div class="font-playfair font-semibold tracking-tight mb-4">
+              <img
+                src="assets/img/white-logo.jpeg"
+                class="w-36"
+                alt="Somah Group"
+              />
+            </div>
+            <p class="text-sm text-gray-400 font-inter">
+              Institutional access across foreign exchange, trade finance and
+              cross-border liquidity.
+            </p>
+          </div>
+          <div>
+            <h4
+              class="font-inter font-semibold text-white text-sm mb-4 tracking-wide"
+            >
+              CAPABILITIES
+            </h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="commercial-finance.html"
+                  class="text-sm text-gray-400 hover:text-white transition-colors"
+                >
+                  Commercial & Trade Finance
+                </a>
+              </li>
+              <li>
+                <a
+                  href="corporate-fx.html"
+                  class="text-sm text-gray-400 hover:text-white transition-colors"
+                  >Corporate FX & Structured Hedging</a
+                >
+              </li>
+              <li>
+                <a
+                  href="emerging-liquidity.html"
+                  class="text-sm text-gray-400 hover:text-white transition-colors"
+                >
+                  Emerging Markets Liquidity</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="font-inter font-semibold text-white text-sm mb-4 tracking-wide"
+            >
+              COMPANY
+            </h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="about-us.html"
+                  class="text-sm text-gray-400 hover:text-white transition-colors"
+                  >About Us</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-sm text-gray-400 hover:text-white transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="font-inter font-semibold text-white text-sm mb-4 tracking-wide"
+            >
+              LEGAL
+            </h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="privacy-policy.html"
+                  class="text-sm text-gray-400 hover:text-white transition-colors"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="terms-and-service.html"
+                  class="text-sm text-gray-400 hover:text-white transition-colors"
+                  >Terms of Service</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-200 pt-8 flex flex-col justify-between items-center gap-8"
+        >
+          <div class="container">
+            <p
+              class="mil-mb-5"
+              style="
+                font-size: 12px;
+                line-height: 1.5;
+                text-align: center;
+                margin-bottom: 8px;
+              "
+            >
+              Somah Group operates as an intermediary and introducer in relation
+              to certain services. For Corporate FX, Somah Group manages
+              execution while client funds are safeguarded and settled through
+              regulated liquidity providers. Commercial & Trade Finance and
+              Emerging Markets Cross-Border Liquidity solutions are structured
+              and introduced through authorised third-party partners.
+            </p>
+
+            <p
+              class="mil-mb-5"
+              style="
+                font-size: 12px;
+                line-height: 1.5;
+                text-align: center;
+                margin-bottom: 8px;
+              "
+            >
+              Payment services for SOMAH GROUP LIMITED are provided by Sciopay
+              Ltd. Sciopay Ltd, a company incorporated in England &amp; Wales.
+              Registration No: 12352935. Sciopay Ltd is licenced and regulated
+              by HMRC as a Money Service Business (MSB). Licence No:
+              XCML00000151326 Sciopay Ltd is authorised by the Financial Conduct
+              Authority as an Authorised Payment Institution. Firm Reference
+              Number: 927951Mailing Address: Sciopay Ltd, Moor Place, 1 Fore
+              Street Avenue, London, EC2Y 9DT, UK
+            </p>
+
+            <p
+              class="mil-mb-5"
+              style="
+                font-size: 12px;
+                line-height: 1.5;
+                text-align: center;
+                margin-bottom: 8px;
+              "
+            >
+              Somah Group Limited's Payment and Foreign Currency Exchange
+              Services are provided by Ebury Partners UK Limited. Ebury Partners
+              UK Ltd is authorised and regulated by the Financial Conduct
+              Authority as an Electronic Money Institution. Reference number:
+              900797. Ebury Partners UK Ltd is registered with the Information
+              Commissioners Office, with registration number: ZA345828.
+            </p>
+            <p
+              class="mil-mb-15"
+              style="
+                font-size: 12px;
+                line-height: 1.5;
+                text-align: center;
+                margin-bottom: 8px;
+              "
+            >
+              Payment services for Somah Group are provided by Equals Money Plc,
+              a company incorporated in England &amp; Wales Registration No :
+              05539698 Equals Money Plc is authorised by the Financial Conduct
+              Authority as an Authorised Payment Institution Firm Reference
+              Number : 488396
+            </p>
+          </div>
+          <p class="text-sm text-gray-400 font-inter mb-4 md:mb-0">
+            © 2024 Somah Group. All rights reserved.
           </p>
-        </div>
-        <div>
-          <h4 class="font-inter font-semibold text-white text-sm mb-4 tracking-wide">CAPABILITIES</h4>
-          <ul class="space-y-3">
-            <li>
-              <a href="commercial-finance.html"
-                class="text-sm text-gray-400 hover:text-white transition-colors">Commercial Finance</a>
-            </li>
-            <li>
-              <a href="corporate-fx.html" class="text-sm text-gray-400 hover:text-white transition-colors">Corporate
-                FX</a>
-            </li>
-            <li>
-              <a href="emerging-liquidity.html"
-                class="text-sm text-gray-400 hover:text-white transition-colors">Emerging Liquidity</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-inter font-semibold text-white text-sm mb-4 tracking-wide">
-            COMPANY
-          </h4>
-          <ul class="space-y-3">
-            <li>
-              <a href="about-us.html" class="text-sm text-gray-400 hover:text-white transition-colors">About Us</a>
-            </li>
-
-            <li>
-              <a href="contact.html" class="text-sm text-gray-400 hover:text-white transition-colors">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-inter font-semibold text-white text-sm mb-4 tracking-wide">
-            LEGAL
-          </h4>
-          <ul class="space-y-3">
-            <li>
-              <a href="privacy-policy.html" class="text-sm text-gray-400 hover:text-white transition-colors">Privacy
-                Policy</a>
-            </li>
-            <li>
-              <a href="terms-and-service.html" class="text-sm text-gray-400 hover:text-white transition-colors">Terms of
-                Service</a>
-            </li>
-          </ul>
+          <div class="flex space-x-6">
+            <a
+              href="https://www.linkedin.com/company/uk-supply-chain-funding"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-gray-400 hover:text-white transition-colors"
+              ><i class="fab fa-linkedin text-lg"></i
+            ></a>
+            <a
+              href="mailto:admin@somah-group.com"
+              class="text-gray-400 hover:text-white transition-colors"
+              ><i class="fas fa-envelope text-lg"></i
+            ></a>
+          </div>
         </div>
       </div>
-      <div class="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
-        <p class="text-sm text-gray-400 font-inter mb-4 md:mb-0">
-          © 2024 Somah Group. All rights reserved.
-        </p>
-        <div class="flex space-x-6">
-          <a href="https://www.linkedin.com/company/uk-supply-chain-funding" target="_blank" rel="noopener noreferrer"
-            class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-linkedin text-lg"></i></a>
-          <a href="#" class="text-gray-400 hover:text-white transition-colors"><i
-              class="fab fa-twitter text-lg"></i></a>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="assets/js/main.js"></script>
-</body>
-
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
