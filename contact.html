@@ -1,244 +1,380 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"
-        referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script>
+      window.FontAwesomeConfig = { autoReplaceSvg: "nest" };
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
-    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.svg"
+      type="image/x-icon"
+    />
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
     <style>
-        ::-webkit-scrollbar {
-            display: none;
-        }
+      ::-webkit-scrollbar {
+        display: none;
+      }
     </style>
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'playfair': ['Playfair Display', 'serif'],
-                        'inter': ['Inter', 'sans-serif'],
-                    },
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              playfair: ["Playfair Display", "serif"],
+              inter: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
     </script>
-</head>
+  </head>
 
-<body class="font-inter bg-white text-gray-900">
-
+  <body class="font-inter bg-white text-gray-900">
     <header id="header" class="border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            <div class="flex items-center justify-between h-20">
-                <div class="flex items-center">
-                    <div class="font-playfair text-2xl font-semibold tracking-tight">
-                        <a href="index.html"><img src="assets/img/black-logo.jpeg" class="w-36" alt="" /></a>
-                    </div>
-                </div>
-                <nav class="hidden lg:flex items-center space-x-10">
-                    <a href="index.html"
-                        class="text-sm font-medium text-gray-500 hover:text-black transition-colors">Home</a>
-                    <a href="capability.html"
-                        class="text-sm font-medium text-gray-500 hover:text-black transition-colors">Capabilities</a>
-
-                    <a href="partnerships.html"
-                        class="text-sm font-medium text-gray-500 hover:text-black transition-colors">Partnerships</a>
-                    <a href="faq.html"
-                        class="text-sm font-medium text-gray-500 hover:text-black transition-colors">FAQ</a>
-                    <a href="about-us.html"
-                        class="text-sm font-medium text-gray-500 hover:text-black transition-colors">About Us</a>
-                    <a href="contact.html"
-                        class="text-sm font-medium text-black border-b-2 border-black pb-1">Contact</a>
-                </nav>
-                <button id="hamburger-btn" class="lg:hidden text-black relative">
-                    <i class="fas fa-bars text-xl"></i>
-                </button>
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="flex items-center justify-between h-20">
+          <div class="flex items-center">
+            <div class="font-playfair text-2xl font-semibold tracking-tight">
+              <a href="index.html"
+                ><img src="assets/img/black-logo.jpeg" class="w-36" alt=""
+              /></a>
             </div>
+          </div>
+          <nav class="hidden lg:flex items-center space-x-10">
+            <a
+              href="index.html"
+              class="text-sm font-medium text-gray-500 hover:text-black transition-colors"
+              >Home</a
+            >
+            <a
+              href="capability.html"
+              class="text-sm font-medium text-gray-500 hover:text-black transition-colors"
+              >Capabilities</a
+            >
+
+            <a
+              href="partnerships.html"
+              class="text-sm font-medium text-gray-500 hover:text-black transition-colors"
+              >Partnerships</a
+            >
+            <a
+              href="faq.html"
+              class="text-sm font-medium text-gray-500 hover:text-black transition-colors"
+              >FAQ</a
+            >
+            <a
+              href="about-us.html"
+              class="text-sm font-medium text-gray-500 hover:text-black transition-colors"
+              >About Us</a
+            >
+            <a
+              href="contact.html"
+              class="text-sm font-medium text-black border-b-2 border-black pb-1"
+              >Contact</a
+            >
+          </nav>
+          <button id="hamburger-btn" class="lg:hidden text-black relative">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
         </div>
+      </div>
 
-        <!-- Mobile Menu -->
-        <nav id="mobile-menu"
-            class="fixed top-0 right-0 h-screen w-64 bg-black text-white transform translate-x-full transition-transform duration-300 ease-in-out z-40 lg:hidden">
-            <div class="flex flex-col h-full">
-                <div class="flex items-center justify-between px-6 py-6 border-b border-gray-700">
-                    <span class="text-lg font-semibold">Menu</span>
-                    <button id="close-menu-btn" class="text-white">
-                        <i class="fas fa-times text-xl"></i>
-                    </button>
-                </div>
-                <div class="flex-1 overflow-y-auto">
-                    <ul class="flex flex-col space-y-0">
-                        <li>
-                            <a href="index.html"
-                                class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors">Home</a>
-                        </li>
-                        <li>
-                            <a href="capability.html"
-                                class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors">Capabilities</a>
-                        </li>
+      <!-- Mobile Menu -->
+      <nav
+        id="mobile-menu"
+        class="fixed top-0 right-0 h-screen w-64 bg-black text-white transform translate-x-full transition-transform duration-300 ease-in-out z-40 lg:hidden"
+      >
+        <div class="flex flex-col h-full">
+          <div
+            class="flex items-center justify-between px-6 py-6 border-b border-gray-700"
+          >
+            <span class="text-lg font-semibold">Menu</span>
+            <button id="close-menu-btn" class="text-white">
+              <i class="fas fa-times text-xl"></i>
+            </button>
+          </div>
+          <div class="flex-1 overflow-y-auto">
+            <ul class="flex flex-col space-y-0">
+              <li>
+                <a
+                  href="index.html"
+                  class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="capability.html"
+                  class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors"
+                  >Capabilities</a
+                >
+              </li>
 
-                        <li>
-                            <a href="partnerships.html"
-                                class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors">Partnerships</a>
-                        </li>
-                        <li>
-                            <a href="faq.html"
-                                class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="about-us.html"
-                                class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors">About
-                                Us</a>
-                        </li>
-                        <li>
-                            <a href="contact.html"
-                                class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <!-- Mobile Menu Overlay -->
-        <div id="menu-overlay"
-            class="fixed inset-0 bg-black bg-opacity-50 opacity-0 invisible transition-all duration-300 ease-in-out z-30 lg:hidden">
+              <li>
+                <a
+                  href="partnerships.html"
+                  class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors"
+                  >Partnerships</a
+                >
+              </li>
+              <li>
+                <a
+                  href="faq.html"
+                  class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors"
+                  >FAQ</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about-us.html"
+                  class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="block px-6 py-4 text-sm font-medium border-b border-gray-700 hover:bg-gray-900 transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+
+      <!-- Mobile Menu Overlay -->
+      <div
+        id="menu-overlay"
+        class="fixed inset-0 bg-black bg-opacity-50 opacity-0 invisible transition-all duration-300 ease-in-out z-30 lg:hidden"
+      ></div>
     </header>
 
     <main>
-        <section id="contact-hero" class="py-16 border-b border-gray-200 bg-black">
-            <div class="max-w-7xl mx-auto px-6 lg:px-12">
-                <div class="max-w-4xl">
-                    <div class="mb-6">
-                        <span class="text-sm font-medium text-gray-200 tracking-wide">GET IN TOUCH</span>
-                    </div>
-                    <h1 class="font-playfair text-5xl md:text-6xl font-medium text-white mb-6">
-                        Contact Our Institutional Team
-                    </h1>
-                    <div class="w-16 h-px bg-white mb-8"></div>
-                    <p class="font-inter text-xl text-gray-400 leading-relaxed">
-                        Connect with our institutional specialists to discuss how Somah Group's capital markets
-                        expertise can support your organization's objectives.
-                    </p>
-                </div>
+      <section
+        id="contact-hero"
+        class="py-16 border-b border-gray-200 bg-black"
+      >
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+          <div class="max-w-4xl">
+            <div class="mb-6">
+              <span class="text-sm font-medium text-gray-200 tracking-wide"
+                >GET IN TOUCH</span
+              >
             </div>
-        </section>
+            <h1
+              class="font-playfair text-5xl md:text-6xl font-medium text-white mb-6"
+            >
+              Contact Our Institutional Team
+            </h1>
+            <div class="w-16 h-px bg-white mb-8"></div>
+            <p class="font-inter text-xl text-gray-400 leading-relaxed">
+              Connect with our institutional specialists to discuss how Somah
+              Group's capital markets expertise can support your organization's
+              objectives.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <section id="contact-form-section" class="py-20">
-            <div class="max-w-7xl mx-auto px-6 lg:px-12">
-                <div class="grid grid-cols-1 lg:grid-cols-1 gap-16">
-                    <div id="contact-form" class="lg:col-span-2">
-                        <div id="form-container">
-                            <form method="POST" action="contact-form.php" id="contact-form-element" class="space-y-8">
-                                <div id="topic-selector" class="mb-8">
-                                    <label class="block text-sm font-medium text-gray-900 mb-4">Inquiry Type</label>
-                                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                                        <label
-                                            class="flex items-center p-4 border border-gray-200 hover:border-gray-900 transition-colors cursor-pointer">
-                                            <input type="radio" name="topic" value="institutional-fx"
-                                                class="mr-3 text-gray-900">
-                                            <span class="text-sm font-medium">Institutional FX</span>
-                                        </label>
-                                        <label
-                                            class="flex items-center p-4 border border-gray-200 hover:border-gray-900 transition-colors cursor-pointer">
-                                            <input type="radio" name="topic" value="partnerships"
-                                                class="mr-3 text-gray-900">
-                                            <span class="text-sm font-medium">Partnerships</span>
-                                        </label>
-                                        <label
-                                            class="flex items-center p-4 border border-gray-200 hover:border-gray-900 transition-colors cursor-pointer">
-                                            <input type="radio" name="topic" value="general" class="mr-3 text-gray-900">
-                                            <span class="text-sm font-medium">General Inquiry</span>
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    <div>
-                                        <label class="block text-sm font-medium text-gray-900 mb-2">Full Name *</label>
-                                        <input type="text" name="name" required
-                                            class="w-full px-4 py-3 border border-gray-200 focus:outline-none focus:border-gray-900 transition-colors text-sm">
-                                    </div>
-                                    <div>
-                                        <label class="block text-sm font-medium text-gray-900 mb-2">Work Email *</label>
-                                        <input type="email" name="email" required
-                                            class="w-full px-4 py-3 border border-gray-200 focus:outline-none focus:border-gray-900 transition-colors text-sm">
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <label class="block text-sm font-medium text-gray-900 mb-2">Company *</label>
-                                    <input type="text" name="company" required
-                                        class="w-full px-4 py-3 border border-gray-200 focus:outline-none focus:border-gray-900 transition-colors text-sm">
-                                </div>
-
-                                <div>
-                                    <label class="block text-sm font-medium text-gray-900 mb-2">Message *</label>
-                                    <textarea rows="6" name="message" required
-                                        class="w-full px-4 py-3 border border-gray-200 focus:outline-none focus:border-gray-900 transition-colors text-sm resize-none"
-                                        placeholder="Please provide details about your institutional requirements..."></textarea>
-                                </div>
-
-                                <div id="privacy-notice" class="bg-gray-50 p-6 border border-gray-200">
-                                    <div class="flex items-start">
-                                        <input type="checkbox" name="privacy" required class="mt-1 mr-3 text-gray-900">
-                                        <div class="text-xs text-gray-600 leading-relaxed">
-                                            <p class="mb-2">
-                                                By submitting this form, you consent to Somah Group processing your
-                                                personal data for the purpose of responding to your inquiry and
-                                                providing relevant institutional services information.
-                                            </p>
-                                            <p>
-                                                Your data will be handled in accordance with our <a href="#"
-                                                    class="underline hover:text-gray-900">Privacy Policy</a> and
-                                                applicable data protection regulations. You may withdraw consent at any
-                                                time.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <button type="submit"
-                                    class="inline-flex items-center justify-center px-12 py-4 bg-gray-900 text-white text-sm font-medium tracking-wide hover:bg-gray-800 transition-colors">
-                                    SUBMIT INQUIRY
-                                </button>
-                            </form>
-
-                            <div id="success-message" class="hidden">
-                                <div class="bg-gray-50 p-12 border border-gray-200 text-center">
-                                    <div
-                                        class="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-6">
-                                        <i class="fas fa-check text-white text-xl"></i>
-                                    </div>
-                                    <h3 class="font-playfair text-2xl font-medium text-gray-900 mb-4">Thank You</h3>
-                                    <p class="text-gray-600 mb-6 max-w-md mx-auto">
-                                        Your inquiry has been received. An institutional specialist will contact you
-                                        within 24 hours to discuss your requirements.
-                                    </p>
-                                    <button id="submit-another"
-                                        class="text-sm font-medium text-gray-900 border-b border-gray-900 hover:text-gray-600 transition-colors">
-                                        Submit Another Inquiry
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+      <section id="contact-form-section" class="py-20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+          <div class="grid grid-cols-1 lg:grid-cols-1 gap-16">
+            <div id="contact-form" class="lg:col-span-2">
+              <div id="form-container">
+                <form
+                  method="POST"
+                  action="contact-form.php"
+                  id="contact-form-element"
+                  class="space-y-8"
+                >
+                  <div id="topic-selector" class="mb-8">
+                    <label class="block text-sm font-medium text-gray-900 mb-4"
+                      >Inquiry Type</label
+                    >
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                      <label
+                        class="flex items-center p-4 border border-gray-200 hover:border-gray-900 transition-colors cursor-pointer"
+                      >
+                        <input
+                          type="radio"
+                          name="topic"
+                          value="institutional-fx"
+                          class="mr-3 text-gray-900"
+                        />
+                        <span class="text-sm font-medium"
+                          >Institutional FX</span
+                        >
+                      </label>
+                      <label
+                        class="flex items-center p-4 border border-gray-200 hover:border-gray-900 transition-colors cursor-pointer"
+                      >
+                        <input
+                          type="radio"
+                          name="topic"
+                          value="partnerships"
+                          class="mr-3 text-gray-900"
+                        />
+                        <span class="text-sm font-medium">Partnerships</span>
+                      </label>
+                      <label
+                        class="flex items-center p-4 border border-gray-200 hover:border-gray-900 transition-colors cursor-pointer"
+                      >
+                        <input
+                          type="radio"
+                          name="topic"
+                          value="general"
+                          class="mr-3 text-gray-900"
+                        />
+                        <span class="text-sm font-medium">General Inquiry</span>
+                      </label>
                     </div>
+                  </div>
 
-                    <!-- <div id="contact-details" class="space-y-12">
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <label
+                        class="block text-sm font-medium text-gray-900 mb-2"
+                        >Full Name *</label
+                      >
+                      <input
+                        type="text"
+                        name="name"
+                        required
+                        class="w-full px-4 py-3 border border-gray-200 focus:outline-none focus:border-gray-900 transition-colors text-sm"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-medium text-gray-900 mb-2"
+                        >Work Email *</label
+                      >
+                      <input
+                        type="email"
+                        name="email"
+                        required
+                        class="w-full px-4 py-3 border border-gray-200 focus:outline-none focus:border-gray-900 transition-colors text-sm"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label class="block text-sm font-medium text-gray-900 mb-2"
+                      >Company *</label
+                    >
+                    <input
+                      type="text"
+                      name="company"
+                      required
+                      class="w-full px-4 py-3 border border-gray-200 focus:outline-none focus:border-gray-900 transition-colors text-sm"
+                    />
+                  </div>
+
+                  <div>
+                    <label class="block text-sm font-medium text-gray-900 mb-2"
+                      >Message *</label
+                    >
+                    <textarea
+                      rows="6"
+                      name="message"
+                      required
+                      class="w-full px-4 py-3 border border-gray-200 focus:outline-none focus:border-gray-900 transition-colors text-sm resize-none"
+                      placeholder="Please provide details about your institutional requirements..."
+                    ></textarea>
+                  </div>
+
+                  <div
+                    id="privacy-notice"
+                    class="bg-gray-50 p-6 border border-gray-200"
+                  >
+                    <div class="flex items-start">
+                      <input
+                        type="checkbox"
+                        name="privacy"
+                        required
+                        class="mt-1 mr-3 text-gray-900"
+                      />
+                      <div class="text-xs text-gray-600 leading-relaxed">
+                        <p class="mb-2">
+                          By submitting this form, you consent to Somah Group
+                          processing your personal data for the purpose of
+                          responding to your inquiry and providing relevant
+                          institutional services information.
+                        </p>
+                        <p>
+                          Your data will be handled in accordance with our
+                          <a href="#" class="underline hover:text-gray-900"
+                            >Privacy Policy</a
+                          >
+                          and applicable data protection regulations. You may
+                          withdraw consent at any time.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="inline-flex items-center justify-center px-12 py-4 bg-gray-900 text-white text-sm font-medium tracking-wide hover:bg-gray-800 transition-colors"
+                  >
+                    SUBMIT INQUIRY
+                  </button>
+                </form>
+
+                <div id="success-message" class="hidden">
+                  <div
+                    class="bg-gray-50 p-12 border border-gray-200 text-center"
+                  >
+                    <div
+                      class="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-6"
+                    >
+                      <i class="fas fa-check text-white text-xl"></i>
+                    </div>
+                    <h3
+                      class="font-playfair text-2xl font-medium text-gray-900 mb-4"
+                    >
+                      Thank You
+                    </h3>
+                    <p class="text-gray-600 mb-6 max-w-md mx-auto">
+                      Your inquiry has been received. An institutional
+                      specialist will contact you within 24 hours to discuss
+                      your requirements.
+                    </p>
+                    <button
+                      id="submit-another"
+                      class="text-sm font-medium text-gray-900 border-b border-gray-900 hover:text-gray-600 transition-colors"
+                    >
+                      Submit Another Inquiry
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div id="contact-details" class="space-y-12">
                         <div id="office-information">
                             <h3 class="font-playfair text-2xl font-medium text-gray-900 mb-6">Global Offices</h3>
                             <div class="space-y-8">
@@ -325,129 +461,239 @@
                             </p>
                         </div>
                     </div> -->
-                </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer id="footer" class="border-t border-gray-200 py-12 bg-black text-white">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-                <div class="md:col-span-1">
-                    <div class="font-playfair font-semibold tracking-tight mb-4">
-                        <img src="assets/img/white-logo.jpeg" class="w-36" alt="Somah Group" />
-                    </div>
-                    <p class="text-sm text-gray-400 font-inter">
-                        Institutional capital markets solutions for a connected world.
-                    </p>
-                </div>
-                <div>
-                    <h4 class="font-inter font-semibold text-white text-sm mb-4 tracking-wide">CAPABILITIES</h4>
-                    <ul class="space-y-3">
-                        <li>
-                            <a href="commercial-finance.html"
-                                class="text-sm text-gray-400 hover:text-white transition-colors">Commercial Finance</a>
-                        </li>
-                        <li>
-                            <a href="corporate-fx.html"
-                                class="text-sm text-gray-400 hover:text-white transition-colors">Corporate
-                                FX</a>
-                        </li>
-                        <li>
-                            <a href="emerging-liquidity.html"
-                                class="text-sm text-gray-400 hover:text-white transition-colors">Emerging Liquidity</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-inter font-semibold text-white text-sm mb-4 tracking-wide">
-                        COMPANY
-                    </h4>
-                    <ul class="space-y-3">
-                        <li>
-                            <a href="about-us.html"
-                                class="text-sm text-gray-400 hover:text-white transition-colors">About Us</a>
-                        </li>
+    <footer
+      id="footer"
+      class="border-t border-gray-200 py-12 bg-black text-white"
+    >
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+          <div class="md:col-span-1">
+            <div class="font-playfair font-semibold tracking-tight mb-4">
+              <img
+                src="assets/img/white-logo.jpeg"
+                class="w-36"
+                alt="Somah Group"
+              />
+            </div>
+            <p class="text-sm text-gray-400 font-inter">
+              Institutional access across foreign exchange, trade finance and
+              cross-border liquidity.
+            </p>
+          </div>
+          <div>
+            <h4
+              class="font-inter font-semibold text-white text-sm mb-4 tracking-wide"
+            >
+              CAPABILITIES
+            </h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="commercial-finance.html"
+                  class="text-sm text-gray-400 hover:text-white transition-colors"
+                >
+                  Commercial & Trade Finance
+                </a>
+              </li>
+              <li>
+                <a
+                  href="corporate-fx.html"
+                  class="text-sm text-gray-400 hover:text-white transition-colors"
+                  >Corporate FX & Structured Hedging</a
+                >
+              </li>
+              <li>
+                <a
+                  href="emerging-liquidity.html"
+                  class="text-sm text-gray-400 hover:text-white transition-colors"
+                >
+                  Emerging Markets Liquidity</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="font-inter font-semibold text-white text-sm mb-4 tracking-wide"
+            >
+              COMPANY
+            </h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="about-us.html"
+                  class="text-sm text-gray-400 hover:text-white transition-colors"
+                  >About Us</a
+                >
+              </li>
 
-                        <li>
-                            <a href="contact.html"
-                                class="text-sm text-gray-400 hover:text-white transition-colors">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-inter font-semibold text-white text-sm mb-4 tracking-wide">
-                        LEGAL
-                    </h4>
-                    <ul class="space-y-3">
-                        <li>
-                            <a href="privacy-policy.html"
-                                class="text-sm text-gray-400 hover:text-white transition-colors">Privacy
-                                Policy</a>
-                        </li>
-                        <li>
-                            <a href="terms-and-service.html"
-                                class="text-sm text-gray-400 hover:text-white transition-colors">Terms of
-                                Service</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-sm text-gray-400 font-inter mb-4 md:mb-0">
-                    © 2024 Somah Group. All rights reserved.
-                </p>
-                <div class="flex space-x-6">
-                    <a href="https://www.linkedin.com/company/uk-supply-chain-funding" target="_blank"
-                        rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors"><i
-                            class="fab fa-linkedin text-lg"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-white transition-colors"><i
-                            class="fab fa-twitter text-lg"></i></a>
-                </div>
-            </div>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-sm text-gray-400 hover:text-white transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="font-inter font-semibold text-white text-sm mb-4 tracking-wide"
+            >
+              LEGAL
+            </h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="privacy-policy.html"
+                  class="text-sm text-gray-400 hover:text-white transition-colors"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="terms-and-service.html"
+                  class="text-sm text-gray-400 hover:text-white transition-colors"
+                  >Terms of Service</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+        <div
+          class="border-t border-gray-200 pt-8 flex flex-col justify-between items-center gap-8"
+        >
+          <div class="container">
+            <p
+              class="mil-mb-5"
+              style="
+                font-size: 12px;
+                line-height: 1.5;
+                text-align: center;
+                margin-bottom: 8px;
+              "
+            >
+              Somah Group operates as an intermediary and introducer in relation
+              to certain services. For Corporate FX, Somah Group manages
+              execution while client funds are safeguarded and settled through
+              regulated liquidity providers. Commercial & Trade Finance and
+              Emerging Markets Cross-Border Liquidity solutions are structured
+              and introduced through authorised third-party partners.
+            </p>
+
+            <p
+              class="mil-mb-5"
+              style="
+                font-size: 12px;
+                line-height: 1.5;
+                text-align: center;
+                margin-bottom: 8px;
+              "
+            >
+              Payment services for SOMAH GROUP LIMITED are provided by Sciopay
+              Ltd. Sciopay Ltd, a company incorporated in England &amp; Wales.
+              Registration No: 12352935. Sciopay Ltd is licenced and regulated
+              by HMRC as a Money Service Business (MSB). Licence No:
+              XCML00000151326 Sciopay Ltd is authorised by the Financial Conduct
+              Authority as an Authorised Payment Institution. Firm Reference
+              Number: 927951Mailing Address: Sciopay Ltd, Moor Place, 1 Fore
+              Street Avenue, London, EC2Y 9DT, UK
+            </p>
+
+            <p
+              class="mil-mb-5"
+              style="
+                font-size: 12px;
+                line-height: 1.5;
+                text-align: center;
+                margin-bottom: 8px;
+              "
+            >
+              Somah Group Limited's Payment and Foreign Currency Exchange
+              Services are provided by Ebury Partners UK Limited. Ebury Partners
+              UK Ltd is authorised and regulated by the Financial Conduct
+              Authority as an Electronic Money Institution. Reference number:
+              900797. Ebury Partners UK Ltd is registered with the Information
+              Commissioners Office, with registration number: ZA345828.
+            </p>
+            <p
+              class="mil-mb-15"
+              style="
+                font-size: 12px;
+                line-height: 1.5;
+                text-align: center;
+                margin-bottom: 8px;
+              "
+            >
+              Payment services for Somah Group are provided by Equals Money Plc,
+              a company incorporated in England &amp; Wales Registration No :
+              05539698 Equals Money Plc is authorised by the Financial Conduct
+              Authority as an Authorised Payment Institution Firm Reference
+              Number : 488396
+            </p>
+          </div>
+          <p class="text-sm text-gray-400 font-inter mb-4 md:mb-0">
+            © 2024 Somah Group. All rights reserved.
+          </p>
+          <div class="flex space-x-6">
+            <a
+              href="https://www.linkedin.com/company/uk-supply-chain-funding"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-gray-400 hover:text-white transition-colors"
+              ><i class="fab fa-linkedin text-lg"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors"
+              ><i class="fab fa-twitter text-lg"></i
+            ></a>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="assets/js/main.js"></script>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const form = document.getElementById('contact-form-element');
-            const formContainer = document.getElementById('form-container');
-            const successMessage = document.getElementById('success-message');
-            const submitAnotherBtn = document.getElementById('submit-another');
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("contact-form-element");
+        const formContainer = document.getElementById("form-container");
+        const successMessage = document.getElementById("success-message");
+        const submitAnotherBtn = document.getElementById("submit-another");
 
-            form.addEventListener('submit', function (e) {
-                e.preventDefault();
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
 
-                const formData = new FormData(form);
+          const formData = new FormData(form);
 
-                fetch('contact-form.php', {
-                    method: 'POST',
-                    body: formData
-                })
-                    .then(response => response.text())
-                    .then(data => {
-                        if (data.includes('Thank you')) {
-                            form.classList.add('hidden');
-                            successMessage.classList.remove('hidden');
-                        } else {
-                            alert('Error: ' + data);
-                        }
-                    })
-                    .catch(error => {
-                        alert('Error submitting form: ' + error);
-                    });
-            });
-
-            submitAnotherBtn.addEventListener('click', function () {
-                form.reset();
-                successMessage.classList.add('hidden');
-                form.classList.remove('hidden');
+          fetch("contact-form.php", {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => response.text())
+            .then((data) => {
+              if (data.includes("Thank you")) {
+                form.classList.add("hidden");
+                successMessage.classList.remove("hidden");
+              } else {
+                alert("Error: " + data);
+              }
+            })
+            .catch((error) => {
+              alert("Error submitting form: " + error);
             });
         });
+
+        submitAnotherBtn.addEventListener("click", function () {
+          form.reset();
+          successMessage.classList.add("hidden");
+          form.classList.remove("hidden");
+        });
+      });
     </script>
-
-</body>
-
+  </body>
 </html>
