@@ -188,7 +188,7 @@
             <h1
               class="font-playfair text-5xl md:text-6xl font-medium text-white mb-6"
             >
-              Contact Our Institutional Team
+              Contact Our Team
             </h1>
             <div class="w-16 h-px bg-white mb-8"></div>
             <p class="font-inter text-xl text-gray-400 leading-relaxed">
@@ -225,7 +225,7 @@
                           Select Inquiry Type
                         </option>
                         <option value="institutional-fx">
-                          Institutional FX
+                          Foreign Exchange
                         </option>
                         <option value="partnerships">Partnerships</option>
                         <option value="general">General Inquiry</option>
@@ -280,11 +280,23 @@
 
                   <div>
                     <label class="block text-sm font-medium text-gray-900 mb-2"
-                      >Company *</label
+                      >Company Name*</label
                     >
                     <input
                       type="text"
                       name="company"
+                      required
+                      class="w-full px-4 py-3 border border-gray-200 focus:outline-none focus:border-gray-900 transition-colors text-sm"
+                    />
+                  </div>
+
+                  <div>
+                    <label class="block text-sm font-medium text-gray-900 mb-2"
+                      >Company Turnover*</label
+                    >
+                    <input
+                      type="text"
+                      name="company_turnover"
                       required
                       class="w-full px-4 py-3 border border-gray-200 focus:outline-none focus:border-gray-900 transition-colors text-sm"
                     />
