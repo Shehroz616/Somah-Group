@@ -26,6 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $name = $_POST['name'];
         $email = $_POST['email'];
         $company = $_POST['company'];
+        $company_turnover = $_POST['company_turnover'];
         $message = $_POST['message'];
         $topic = $_POST['topic'];
 
@@ -82,8 +83,13 @@ $mail->Body = <<<HTML
                     <span style="font-size:15px;font-size:clamp(13px,1.8vw,15px);color:#222;">$company</span>
                 </p>
 
+                <p style="margin:0 0 10px;">
+                    <strong style="font-size:11px;font-size:clamp(10px,1.4vw,11px);color:#999;">COMPANY TURNOVER</strong><br>
+                    <span style="font-size:15px;font-size:clamp(13px,1.8vw,15px);color:#222;">$company_turnover</span>
+                </p>
+
                 <p style="margin:0 0 20px;">
-                    <strong style="font-size:11px;font-size:clamp(10px,1.4vw,11px);color:#999;">TOPIC</strong><br>
+                    <strong style="font-size:11px;font-size:clamp(10px,1.4vw,11px);color:#999;">Inquiry Type</strong><br>
                     <span style="font-size:15px;font-size:clamp(13px,1.8vw,15px);color:#222;">$topic</span>
                 </p>
 
