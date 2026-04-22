@@ -85,7 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <tr>
             <td style="background:#111;color:#888;padding:15px 20px;font-size:12px;">
-                © 2024 Somah Group. All rights reserved.
+                © 2025 Somah Group. All rights reserved.
             </td>
         </tr>
 
