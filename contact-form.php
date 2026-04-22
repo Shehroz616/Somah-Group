@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message         = htmlspecialchars(strip_tags($_POST['message']));
     $topic           = htmlspecialchars(strip_tags($_POST['topic']));
 
-    $to      = 'ta475232@gmail.com';
+    $to      = 'admin@somah-group.com';
     $subject = 'Somah Group – New Contact Form Submission';
 
     $headers  = "MIME-Version: 1.0\r\n";
